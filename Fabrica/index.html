@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Index Page</title>
-<link rel="stylesheet" type="text/css" href="css/main.css">
+<title>Fabrica</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 </head>
 
 <body>
@@ -39,6 +39,35 @@
         <div class="col6 last fluid">6</div>
     </div>
     
+    <div class="col6 sample-code">
+    <code>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col1 fluid"&gt;1&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col11 last fluid"&gt;11&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col2 fluid"&gt;2&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col10 last fluid"&gt;10&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col3 fluid"&gt;3&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col9 last fluid"&gt;9&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col4 fluid"&gt;4&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col8 last fluid"&gt;8&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col5 fluid"&gt;5&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col7 last fluid"&gt;7&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col6 fluid"&gt;6&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col6 last fluid"&gt;6&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    </code>
+    </div>
+    
     <div class="col12">
     <h3>All Possible Grid Sizes</h3>
     </div>
@@ -47,6 +76,43 @@
         <div class="col4 small fluid">S 100px <br>Add "small" to class</div>
         <div class="col3 medium fluid">M 200px <br>Add "medium" to class</div>
         <div class="col5 large last fluid">L 300px <br>Add "large" to class</div>
+    </div>
+	
+    <div class="col6 sample-code">
+    <code>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col4 small fluid"&gt;S 100px &lt;br&gt;Add "small" to class&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col3 medium fluid"&gt;M 200px &lt;br&gt;Add "medium" to class&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col5 large last fluid"&gt;L 300px &lt;br&gt;Add "large" to class&lt;/div&gt;<br>
+    &lt;/div&gt;
+	</code>
+    </div>
+    
+<!--Typography-->        
+    <div class="onerow">
+        <div class="col12">
+        <h3>Typography</h3>
+        </div>
+    </div>
+            
+    <div class="onerow typography">
+    <div class="col6">
+        <h1>Standard Headings</h1>
+        <h1>Typography&nbsp;<code>&lt;h1&gt;</code></h1>
+        <h2>Typography&nbsp;<code>&lt;h2&gt;</code></h2>
+        <h3>Typography&nbsp;<code>&lt;h3&gt;</code></h3>
+        <h4>Typography&nbsp;<code>&lt;h4&gt;</code></h4>
+        <h5>Typography&nbsp;<code>&lt;h5&gt;</code></h5>
+        <h6>Typography&nbsp;<code>&lt;h6&gt;</code></h6>
+    </div>
+    <div class="col6 last">
+    	<h1>Styled Types</h1>
+		<p>Basic Type&nbsp;<code>&lt;p&gt;</code></p>
+        <p><strong>Bolded</strong>&nbsp;<code>&lt;strong&gt;</code></p>
+    	<p><em>Italicized</em>&nbsp;<code>&lt;em&gt;</code></p>
+        <p><u>Underlined</u>&nbsp;<code>&lt;u&gt;</code></p>
+        
+    </div>
     </div>
 
 <!--Title and Data Component-->
@@ -80,6 +146,24 @@
             </div>
             </div>
         </div>
+    </div>
+    
+    <div class="onerow">
+    <div class="col6 sample-code">
+    <code>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col6"&gt;<br>&nbsp;&nbsp;
+            &lt;div class="data"&gt;<br>&nbsp;&nbsp;
+            &lt;div class="data-indicator"&gt;&lt;/div&gt;<br>&nbsp;&nbsp;
+            &lt;div class="data-heading"&gt;Heading&lt;/div&gt;<br>&nbsp;&nbsp;
+            &lt;div class="data-text"&gt;<br>&nbsp;&nbsp;&nbsp;
+            &lt;p&gt;Write Here...&lt;/p&gt;<br>&nbsp;&nbsp;
+            &lt;/div&gt;<br>&nbsp;&nbsp;
+            &lt;/div&gt;<br>&nbsp;&nbsp;
+        &lt;/div&gt;<br>
+    &lt;/div&gt;
+    </code>
+	</div>
     </div>
 
 <!--Image Component-->
@@ -115,15 +199,67 @@
         </div>
         </div>
     </div>
-    
-<!--Form Component-->    
+
+    <div class="onerow">
+    <div class="col3 sample-code">
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col3 medium"&gt;<br>&nbsp;
+            &lt;div class="image-div-1"&gt;<br>&nbsp;&nbsp;
+                &lt;div class="image-overlay"&gt;<br>&nbsp;&nbsp;&nbsp;
+                    &lt;span class="image-text"&gt;Image.jpg<br>&nbsp;&nbsp;&nbsp;
+                    &lt;/span&gt;<br>&nbsp;&nbsp;
+                &lt;/div&gt;<br>&nbsp;
+            &lt;/div&gt;<br>&nbsp;
+        &lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    </div>
+    </div>
+
+
+<!--Video Component-->        
     <div class="onerow">
         <div class="col12">
-        <h3>Form Component</h3>
+        <h3>Video Component</h3>
         </div>
     </div>
     
     <div class="onerow">
+    	<div class="col6 last">
+    	<video controls class="video-div">
+	        <source src="videos/video_1.mp4" type="video/mp4">
+        </video>
+        <div class="video-footer">
+                <span class="video-text">Video.mp4
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="onerow">
+    <div class="col6 sample-code">
+    &lt;div class="onerow"&gt;<br>
+&nbsp;        &lt;div class="col6 medium"&gt;<br>
+&nbsp;&nbsp;            &lt;video controls class="video-div"&gt;<br>
+&nbsp;&nbsp;&nbsp;                &lt;source src="videos/video_1.mp4" type="video/mp4"&gt;<br>
+&nbsp;&nbsp;            &lt;/video&gt;<br>
+&nbsp;&nbsp;            &lt;div class="video-footer"&gt;<br>
+&nbsp;&nbsp;&nbsp;                &lt;span class="video-text"&gt;Video.mp4<br>
+&nbsp;&nbsp;&nbsp;                &lt;/span&gt;<br>
+&nbsp;&nbsp;            &lt;/div&gt;<br>
+&nbsp;        &lt;/div&gt;<br>
+    &lt;/div&gt;
+    </div>
+	</div>
+    
+<!--Form Component-->    
+    <div class="onerow">
+        <div class="col12">
+        <h3>Form Components</h3>
+        </div>
+    </div>
+    
+    <div class="onerow">
+    <!--Button Component--> 
         <div class="col6">
         	<div class="col6">
             <button class="button-simple-div">Button</button>
@@ -133,6 +269,7 @@
         	</div>
         </div>
         
+    <!--Checkbox Component--> 
         <div class="col6 last">
             <div class="checkbox-div">
             <p>
@@ -149,6 +286,7 @@
         </div>
     </div>
 
+	<!--Radio Button Component--> 
     <div class="onerow">    
         <div class="col6">
             <div class="radio-div">
@@ -165,7 +303,7 @@
             </div>
         </div>
         
-            
+    <!--Simple Input Component--> 
         <div class="col6 last">    
             <form class="text-form-div">
             <div class="col6">
@@ -178,7 +316,8 @@
             </form>
             </div>
         </div>
-        
+    
+    <!--Textarea Component-->     
     <div class="onerow">    
         <div class="col6">
             <div class="textarea-div">
@@ -187,6 +326,7 @@
             </div>
         </div>
     
+    <!--Dropdown Component--> 
     	<div class="col6 last">
     	<div class="dropdown-div">
         <h4>Select an option</h4>
@@ -201,56 +341,10 @@
     </div>
     </div>
 
-<!--Video Component-->        
-    <div class="onerow">
-        <div class="col12">
-        <h3>Video Component</h3>
-        </div>
-    </div>
-    
-    <div class="onerow">
-    	<div class="col6">
-    	<video controls class="video-div">
-	        <source src="videos/video_1.mp4" type="video/mp4">
-        </video>
-        <div class="video-footer">
-                <span class="video-text">Video.mp4
-                </span>
-            </div>
-        </div>
-    </div>
-
-<!--Typography-->        
-    <div class="onerow">
-        <div class="col12">
-        <h3>Typography</h3>
-        </div>
-    </div>
-            
-    <div class="onerow typography">
-    <div class="col6">
-        <h1>Standard Headings</h1>
-        <h1>Typography&nbsp;<code>&lt;h1&gt;</code></h1>
-        <h2>Typography&nbsp;<code>&lt;h2&gt;</code></h2>
-        <h3>Typography&nbsp;<code>&lt;h3&gt;</code></h3>
-        <h4>Typography&nbsp;<code>&lt;h4&gt;</code></h4>
-        <h5>Typography&nbsp;<code>&lt;h5&gt;</code></h5>
-        <h6>Typography&nbsp;<code>&lt;h6&gt;</code></h6>
-    </div>
-    <div class="col6 last">
-    	<h1>Styled Types</h1>
-		<p>Basic Type&nbsp;<code>&lt;p&gt;</code></p>
-        <p><strong>Bolded</strong>&nbsp;<code>&lt;strong&gt;</code></p>
-    	<p><em>Italicized</em>&nbsp;<code>&lt;em&gt;</code></p>
-        <p><u>Underlined</u>&nbsp;<code>&lt;u&gt;</code></p>
-        
-    </div>
-    </div>
-
 <!--Tables-->        
     <div class="onerow">
         <div class="col12">
-        <h3>Tables</h3>
+        <h3>Table Component</h3>
         </div>
     </div>
 
@@ -292,13 +386,13 @@
     </div>
 	</div>
     
+<!--Scrollbar-->        
+    <div class="onerow">
+        <div class="col12">
+        <h3>Scrollbar Component (Note: Notice the scrollbar component (Editable in SASS and CSS))</h3>
+        </div>
+    </div>   
     
-    
-
-
-
-    
-
 </div>
 </body>
 
