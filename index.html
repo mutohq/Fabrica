@@ -4,11 +4,67 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Fabrica</title>
 <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+<link rel="stylesheet" href="icons/material-icons.css">
+<script language="JavaScript">
+function setVisibility(id, visibility) {
+document.getElementById(id).style.display = visibility;
+}
+</script>
 </head>
 
 <body>
 <div class="onepcssgrid-1200">
+	
+<!--Floating Menu Button-->
+	
+	<div class="header">
+        <div class="menushow" type=button name=type onclick="setVisibility('menu', 'inline');">
+        <i class="material-icons">menu</i>
+        </div>
+        <div class="header-title">Fabrica</div>
+	</div>
+    
+    <div id="menu" class="onepcssgrid-1200 menucontent">
+    
+        <div class="menuhide" type=button name=type onclick="setVisibility('menu', 'none');">
+        <i class="material-icons">close</i>
+        </div>
 
+        <div class="onerow">
+        	<div class="col4">
+            </div>
+            <div class="col4">
+                <h3><button class="round-button-div small-round-button"><i class="material-icons">home</i></button>Main Title</h3>
+                <ul style="list-style-type:none">
+                  <li><i class="material-icons">filter_1</i>Option 1</li>
+                  <li><i class="material-icons">filter_2</i>Option 2</li>
+                  <li><i class="material-icons">filter_3</i>Option 3</li>
+                </ul>
+            </div>
+        	<div class="col4 last">
+            </div>
+    	</div>
+        
+        <div class="onerow">
+        	<div class="col4">
+            </div>
+            <div class="col4 medium">
+            <div class="image-div-2">
+                <div class="image-overlay">
+                    <span class="image-text">Image.jpg
+                    </span>
+                </div>
+            </div>
+            </div>
+            <div class="col4 last">
+            </div>
+        </div>
+    </div>	
+    
+	<br><br><br><br><br>
+    
+<!--Fluid Grid System-->    
+    
     <div class="col12">
     <h3>Fluid Grid System</h3>
     </div>
@@ -201,7 +257,7 @@
     </div>
 
     <div class="onerow">
-    <div class="col3 sample-code">
+    <div class="col6 sample-code">
     &lt;div class="onerow"&gt;<br>&nbsp;
         &lt;div class="col3 medium"&gt;<br>&nbsp;
             &lt;div class="image-div-1"&gt;<br>&nbsp;&nbsp;
@@ -260,85 +316,101 @@
     
     <div class="onerow">
     <!--Button Component--> 
-        <div class="col6">
-        	<div class="col6">
+        <div class="col12 last">
+        	<div class="button-div">
+        	<h4>Simple and Coloured Button</h4>
             <button class="button-simple-div">Button</button>
-            </div>
-            <div class="col6 last">
             <button class="button-color-div">Button</button>
         	</div>
         </div>
-        
-    <!--Checkbox Component--> 
+	</div>
+    
+    <!--Round Button Component--> 
+    <div class="onerow">
+		<div class="col6">
+        	<div class="button-div">
+            <h4>Round Button</h4>
+            <button class="round-button-div"><i class="material-icons">home</i></button>
+            <button class="round-button-div"><i class="material-icons">event</i></button>
+            <button class="round-button-div"><i class="material-icons">watch</i></button>
+            <button class="round-button-div"><i class="material-icons">people</i></button>
+            <button class="round-button-div"><i class="material-icons">book</i></button>
+        	</div>
+        </div>
         <div class="col6 last">
-            <div class="checkbox-div">
-            <p>
-            <div class="col6">
+        	<div class="button-div">
+            <h4>Round Button Sizes</h4>
+            <button class="round-button-div small-round-button"><i class="material-icons">home</i></button>
+            <button class="round-button-div medium-round-button"><i class="material-icons">home</i></button>
+        	<button class="round-button-div large-round-button"><i class="material-icons">home</i></button>
+        	</div>
+        </div>
+	</div>
+    
+    <div class="onerow">
+    <!--Checkbox Component--> 
+        <div class="checkbox-div col6">
+        	<h4>Checked Checkbox</h4>
             <input type="checkbox" id="cb1" name="checkbox" checked>
             <label for="cb1">Ckeckbox Checked</label>
-            </div>
-            <div class="col6 last">
+        </div>
+        <div class="checkbox-div col6 last">
+        	<h4>Unchecked Checckbox</h4>
             <input type="checkbox" id="cb2" name="checkbox">
             <label for="cb2">Ckeckbox Unchecked</label>
-    		</div>
-            </p>
-            </div>
         </div>
-    </div>
-
+	</div>
+    
+    <div class="onerow">
 	<!--Radio Button Component--> 
-    <div class="onerow">    
-        <div class="col6">
-            <div class="radio-div">
-            <p>
-            <div class="col6">
+        <div class="radio-div col6">
+        	<h4>Active Radio Button</h4>
             <input type="radio" id="rd1" name="radio" value="Option 1" checked>
             <label for="rd1">Radio On</label>
-            </div>
-            <div class="col6 last">
+        </div>
+        <div class="radio-div col6 last">
+        	<h4>Inactive Radio Button</h4>
             <input type="radio" id="rd2" name="radio" value="Option 2">
             <label for="rd2">Radio Off</label>
-            </div>
-            </p>
-            </div>
         </div>
-        
-    <!--Simple Input Component--> 
-        <div class="col6 last">    
-            <form class="text-form-div">
-            <div class="col6">
-            <h4>First name</h4>
-            <input type="text" name="firstname"  class="text-form-input" placeholder="Shubham">
-            </div>
-            <div class="col6 last">
-            <h4>Last name</h4>
-            <input type="text" name="lastname" class="text-form-input" placeholder="Naik">
-            </form>
-            </div>
-        </div>
+    </div>
     
-    <!--Textarea Component-->     
+    <!--Simple Input Component-->
+    <div class="onerow"> 
+		<div class="col6">
+            <div class="text-form-div">
+                <h4>First name</h4>
+                <input type="text" name="firstname"  class="text-form-input" placeholder="Shubham">
+            </div>
+        </div>
+        <div class="col6 last">
+            <div class="text-form-div">
+                <h4>Last name</h4>
+                <input type="text" name="lastname" class="text-form-input" placeholder="Naik">
+            </div>
+         </div>
+     </div>
+    
     <div class="onerow">    
+    <!--Textarea Component-->     
         <div class="col6">
             <div class="textarea-div">
             <h4>Message</h4>
             <textarea class="textarea-data" cols="" rows="5" placeholder="Hello ..."></textarea>
             </div>
-        </div>
-    
+        </div>    
     <!--Dropdown Component--> 
     	<div class="col6 last">
-    	<div class="dropdown-div">
-        <h4>Select an option</h4>
-        <select class="dropdown-options">
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
-        <option value="option4">Option 4</option>
-        </select>
-        </div>
-        </div>
-    </div>
+            <div class="dropdown-div">
+            <h4>Select an option</h4>
+            <select class="dropdown-options">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+            </select>
+            </div>
+         </div>
     </div>
 
 <!--Tables-->        
@@ -355,30 +427,40 @@
     <thead>
         <tr>
             <th>Firstname</th>
+            <th>Firstname</th>
             <th>Lastname</th>
             <th>Savings</th>
+            <th>Age</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>Peter</td>
+            <td>Peter</td>
             <td>Griffin</td>
             <td>$100</td>
+            <td>25</td>
         </tr>
         <tr>
             <td>Lois</td>
+            <td>Lois</td>
             <td>Griffin</td>
             <td>$150</td>
+			<td>25</td>
         </tr>
         <tr>
             <td>Joe</td>
+            <td>Joe</td>
             <td>Swanson</td>
             <td>$300</td>
-        </tr>
-        <tr>
+        	<td>25</td>
+		</tr>
+        <tr >
+            <td>Cleveland</td>
             <td>Cleveland</td>
             <td>Brown</td>
             <td>$250</td>
+	        <td>25</td>
         </tr>
     </tbody>
     </table>
@@ -391,7 +473,10 @@
         <div class="col12">
         <h3>Scrollbar Component (Note: Notice the scrollbar component (Editable in SASS and CSS))</h3>
         </div>
-    </div>   
+    </div>
+    
+    
+    
     
 </div>
 </body>

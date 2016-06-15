@@ -353,30 +353,29 @@ html, body {
   border: 1px solid grey;
   color: grey;
   border-radius: 4px;
-  width: auto;
 }
 
 /* **********************************************************************************************************************
  * Text Data Component
  */
-/* line 221, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .data {
   height: 100%;
   width: 100%;
 }
-/* line 225, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .data .data-indicator {
   height: 45px;
   width: 5px;
   background-color: #29B6F6;
 }
-/* line 230, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .data .data-heading {
   margin-left: 15px;
   margin-top: -30px;
   font-size: 20px;
 }
-/* line 235, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .data .data-text {
   font-size: 16px;
   margin-left: 15px;
@@ -389,19 +388,19 @@ html, body {
 /* **********************************************************************************************************************
  * Image Component
  */
-/* line 248, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 [class*="image-div"] {
   box-shadow: 2px 2px 10px grey;
   background: url(../images/image_1.png) center/cover;
   height: 100%;
   width: 100%;
 }
-/* line 254, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 [class*="image-div"] .image-overlay {
   height: 50px;
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 260, ../sass/screen.scss */
+/* line 259, ../sass/screen.scss */
 [class*="image-div"] .image-text {
   color: white;
   font-size: 16px;
@@ -416,10 +415,11 @@ html, body {
 /* **********************************************************************************************************************
  * Video Component
  */
-/* line 274, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .video-div {
   width: 100%;
   padding: 2px;
+  z-index: auto;
 }
 
 /* line 278, ../sass/screen.scss */
@@ -443,10 +443,106 @@ html, body {
 }
 
 /* **********************************************************************************************************************
+ * Header
+ */
+/************************** Header **************************/
+/* line 300, ../sass/screen.scss */
+.header {
+  position: fixed;
+  background-color: white;
+  height: 60px;
+  width: 100%;
+}
+
+/* line 306, ../sass/screen.scss */
+.header-title {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: -15px;
+}
+
+/************************** Menu Button **************************/
+/* line 313, ../sass/screen.scss */
+.menushow {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  border-radius: 5em;
+  outline: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+}
+/* line 325, ../sass/screen.scss */
+.menushow i {
+  margin-top: 12px;
+}
+
+/************************** Menu Content **************************/
+/* line 330, ../sass/screen.scss */
+.menucontent {
+  position: fixed;
+  left: 0px;
+  top: 4px;
+  background-color: white;
+  margin: 12px 4px;
+  width: 100%;
+  height: 100%;
+  color: black;
+  display: none;
+}
+/* line 341, ../sass/screen.scss */
+.menucontent .onerow {
+  padding-bottom: 10px;
+}
+/* line 345, ../sass/screen.scss */
+.menucontent h1, .menucontent h2, .menucontent h3, .menucontent h4, .menucontent h5, .menucontent h6, .menucontent p, .menucontent .image-div-3 {
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+/* line 350, ../sass/screen.scss */
+.menucontent ul {
+  margin-left: 60px;
+}
+/* line 353, ../sass/screen.scss */
+.menucontent ul li {
+  padding: 6px;
+  font-size: 18px;
+}
+/* line 357, ../sass/screen.scss */
+.menucontent ul li i {
+  color: #29B6F6;
+  margin-right: 10px;
+}
+/* line 364, ../sass/screen.scss */
+.menucontent .menuhide {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5em;
+  outline: none;
+  width: 50px;
+  height: 50px;
+}
+/* line 374, ../sass/screen.scss */
+.menucontent .menuhide i {
+  margin-bottom: 10px;
+}
+
+/* **********************************************************************************************************************
  * Form Component
  */
 /************************** Button **************************/
-/* line 300, ../sass/screen.scss */
+/* line 383, ../sass/screen.scss */
+.button-div {
+  padding: 4px;
+}
+
+/* line 386, ../sass/screen.scss */
 .button-simple-div {
   text-align: center;
   background-color: white;
@@ -460,12 +556,12 @@ html, body {
   border-radius: 4px;
   outline: none;
 }
-/* line 313, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 .button-simple-div:hover {
   opacity: 0.5;
 }
 
-/* line 317, ../sass/screen.scss */
+/* line 403, ../sass/screen.scss */
 .button-color-div {
   text-align: center;
   background-color: #29B6F6;
@@ -479,30 +575,90 @@ html, body {
   border-radius: 4px;
   outline: none;
 }
-/* line 330, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 .button-color-div:hover {
   opacity: 0.5;
   border: 2px solid #29B6F6;
 }
 
-/************************** Checkbox **************************/
-/* line 336, ../sass/screen.scss */
-.checkbox-div {
-  padding-bottom: 2px;
-  margin: 0 5px 0 5px;
+/* line 421, ../sass/screen.scss */
+.round-button-div {
+  text-align: center;
+  background-color: #29B6F6;
+  border: 2px solid #29B6F6;
+  color: white;
+  height: 45px;
+  width: 45px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  border-radius: 104px;
+  outline: none;
+  box-shadow: 1px 1px 10px grey;
+}
+/* line 436, ../sass/screen.scss */
+.round-button-div i {
+  padding-top: 5px;
+}
+/* line 440, ../sass/screen.scss */
+.round-button-div:hover {
+  opacity: 0.5;
+  border: 2px solid #29B6F6;
 }
 
-/* line 340, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
+.small-round-button {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+/* line 450, ../sass/screen.scss */
+.small-round-button i {
+  padding-top: 3px;
+  padding-left: -1px;
+}
+
+/* line 455, ../sass/screen.scss */
+.medium-round-button {
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+}
+/* line 460, ../sass/screen.scss */
+.medium-round-button i {
+  padding-top: 2px;
+}
+
+/* line 464, ../sass/screen.scss */
+.large-round-button {
+  height: 55px;
+  width: 55px;
+  margin-right: 10px;
+}
+/* line 469, ../sass/screen.scss */
+.large-round-button i {
+  padding-top: 2px;
+}
+
+/************************** Checkbox **************************/
+/* line 474, ../sass/screen.scss */
+.checkbox-div {
+  padding-bottom: 2px;
+  padding: 4px;
+}
+
+/* line 478, ../sass/screen.scss */
 input[type="checkbox"] {
   display: none;
 }
 
-/* line 343, ../sass/screen.scss */
+/* line 481, ../sass/screen.scss */
 label {
   cursor: pointer;
 }
 
-/* line 346, ../sass/screen.scss */
+/* line 484, ../sass/screen.scss */
 input[type="checkbox"] + label:before {
   border: 2px solid grey;
   content: "\00a0";
@@ -514,7 +670,7 @@ input[type="checkbox"] + label:before {
   width: 16px;
 }
 
-/* line 356, ../sass/screen.scss */
+/* line 494, ../sass/screen.scss */
 input[type="checkbox"]:checked + label:before {
   opacity: 0.7;
   color: #29B6F6;
@@ -523,28 +679,29 @@ input[type="checkbox"]:checked + label:before {
   border: 2px solid #29B6F6;
 }
 
-/* line 363, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 input[type="checkbox"]:checked + label:after {
   font-weight: bold;
 }
 
 /************************** Radio Button **************************/
-/* line 367, ../sass/screen.scss */
+/* line 505, ../sass/screen.scss */
 .radio-div {
   padding-bottom: 2px;
+  padding: 4px;
 }
 
-/* line 370, ../sass/screen.scss */
+/* line 509, ../sass/screen.scss */
 input[type="radio"] {
   display: none;
 }
 
-/* line 373, ../sass/screen.scss */
+/* line 512, ../sass/screen.scss */
 label {
   cursor: pointer;
 }
 
-/* line 376, ../sass/screen.scss */
+/* line 515, ../sass/screen.scss */
 input[type="radio"] + label:before {
   border: 2px solid grey;
   content: "\00a0";
@@ -558,7 +715,7 @@ input[type="radio"] + label:before {
   border-radius: 4px;
 }
 
-/* line 388, ../sass/screen.scss */
+/* line 527, ../sass/screen.scss */
 input[type="radio"]:checked + label:before {
   opacity: 0.7;
   color: #29B6F6;
@@ -567,23 +724,22 @@ input[type="radio"]:checked + label:before {
   border: 2px solid #29B6F6;
 }
 
-/* line 395, ../sass/screen.scss */
+/* line 534, ../sass/screen.scss */
 input[type="radio"]:checked + label:after {
   font-weight: bold;
 }
 
 /************************** Simple Input **************************/
-/* line 399, ../sass/screen.scss */
+/* line 538, ../sass/screen.scss */
 :webkit-textarea-placeholder {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-/* line 402, ../sass/screen.scss */
+/* line 541, ../sass/screen.scss */
 .text-form-div {
-  font-size: 18px;
   margin: 4px 4px;
 }
-/* line 406, ../sass/screen.scss */
+/* line 544, ../sass/screen.scss */
 .text-form-div .text-form-input {
   border: 2px solid grey;
   height: 30px;
@@ -593,7 +749,7 @@ input[type="radio"]:checked + label:after {
   outline: none;
   width: 100%;
 }
-/* line 415, ../sass/screen.scss */
+/* line 553, ../sass/screen.scss */
 .text-form-div .text-form-input:hover {
   border: 2px solid #29B6F6;
   border-radius: 4px;
@@ -602,12 +758,12 @@ input[type="radio"]:checked + label:after {
 }
 
 /************************** Textare Input **************************/
-/* line 425, ../sass/screen.scss */
+/* line 563, ../sass/screen.scss */
 .textarea-div {
   margin: 4px 4px;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
-/* line 429, ../sass/screen.scss */
+/* line 567, ../sass/screen.scss */
 .textarea-div .textarea-data {
   border: 2px solid grey;
   border-radius: 4px;
@@ -616,7 +772,7 @@ input[type="radio"]:checked + label:after {
   outline: none;
   width: 100%;
 }
-/* line 437, ../sass/screen.scss */
+/* line 575, ../sass/screen.scss */
 .textarea-div .textarea-data:hover {
   border: 2px solid #29B6F6;
   border-radius: 4px;
@@ -625,11 +781,11 @@ input[type="radio"]:checked + label:after {
 }
 
 /************************** Dropdown Input **************************/
-/* line 446, ../sass/screen.scss */
+/* line 584, ../sass/screen.scss */
 .dropdown-div {
   margin: 4px 4px;
 }
-/* line 449, ../sass/screen.scss */
+/* line 587, ../sass/screen.scss */
 .dropdown-div .dropdown-options {
   height: 30px;
   border: 2px solid grey;
@@ -638,7 +794,7 @@ input[type="radio"]:checked + label:after {
   border-radius: 4px;
   outline: none;
 }
-/* line 457, ../sass/screen.scss */
+/* line 595, ../sass/screen.scss */
 .dropdown-div .dropdown-options:hover {
   border: 2px solid #29B6F6;
 }
@@ -646,42 +802,47 @@ input[type="radio"]:checked + label:after {
 /* **********************************************************************************************************************
  * Tables
  */
-/* line 466, ../sass/screen.scss */
-.table-div {
-  padding: 4px 4px;
+/* line 604, ../sass/screen.scss */
+table {
+  width: 100%;
   overflow-x: auto;
   white-space: nowrap;
-  text-align: center;
+  width: 100%;
+  display: block;
 }
-/* line 472, ../sass/screen.scss */
-.table-div td {
-  padding-bottom: 10px;
+
+/* line 611, ../sass/screen.scss */
+th {
+  font-size: large;
   padding-top: 10px;
-  color: black;
-}
-/* line 478, ../sass/screen.scss */
-.table-div th {
-  color: black;
-  padding-right: 20px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #29B6F6;
+  padding-right: 10px;
+  width: auto;
+}
+
+/* line 618, ../sass/screen.scss */
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  width: auto;
 }
 
 /* **********************************************************************************************************************
  * Scroll Bar
  */
-/* line 491, ../sass/screen.scss */
+/* line 633, ../sass/screen.scss */
 ::-webkit-scrollbar {
   height: 4px;
   width: 4px;
 }
 
-/* line 496, ../sass/screen.scss */
+/* line 638, ../sass/screen.scss */
 ::-webkit-scrollbar-track {
   background: none;
 }
 
-/* line 500, ../sass/screen.scss */
+/* line 642, ../sass/screen.scss */
 ::-webkit-scrollbar-thumb {
   background: #29B6F6;
   border-radius: 4px;
