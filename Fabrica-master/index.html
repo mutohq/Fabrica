@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fabrica</title>
+<link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+<link rel="stylesheet" href="icons/material-icons.css">
+<script language="JavaScript">
+function setVisibility(id, visibility) {
+document.getElementById(id).style.display = visibility;
+}
+</script>
+</head>
+
+<body>
+<div class="onepcssgrid-1200">
+	
+<!--Floating Menu Button-->
+	
+	<div class="header">
+        <div class="menushow" type=button name=type onclick="setVisibility('menu', 'inline');">
+        <i class="material-icons">menu</i>
+        </div>
+        <div class="header-title">Fabrica</div>
+	</div>
+    
+    <div id="menu" class="onepcssgrid-1200 menucontent">
+    
+        <div class="menuhide" type=button name=type onclick="setVisibility('menu', 'none');">
+        <i class="material-icons">close</i>
+        </div>
+
+        <div class="onerow">
+        	<div class="col4">
+            </div>
+            <div class="col4">
+                <h3><button class="round-button-div small-round-button"><i class="material-icons">home</i></button>Main Title</h3>
+                <ul style="list-style-type:none">
+                  <li><i class="material-icons">filter_1</i>Option 1</li>
+                  <li><i class="material-icons">filter_2</i>Option 2</li>
+                  <li><i class="material-icons">filter_3</i>Option 3</li>
+                </ul>
+            </div>
+        	<div class="col4 last">
+            </div>
+    	</div>
+        
+        <div class="onerow">
+        	<div class="col4">
+            </div>
+            <div class="col4 medium">
+            <div class="image-div-2">
+                <div class="image-overlay">
+                    <span class="image-text">Image.jpg
+                    </span>
+                </div>
+            </div>
+            </div>
+            <div class="col4 last">
+            </div>
+        </div>
+    </div>	
+    
+	<br><br><br><br><br>
+    
+<!--Fluid Grid System-->    
+    
+    <div class="col12">
+    <h3>Fluid Grid System</h3>
+    </div>
+    
+    
+    <div class="onerow">
+        <div class="col1 fluid">1</div>
+        <div class="col11 last fluid">11</div>
+    </div>
+    <div class="onerow">    
+        <div class="col2 fluid">2</div>
+        <div class="col10 last fluid">10</div>
+    </div>
+    <div class="onerow">
+        <div class="col3 fluid">3</div>
+        <div class="col9 last fluid">9</div>
+    </div>
+    <div class="onerow">
+        <div class="col4 fluid">4</div>
+        <div class="col8 last fluid">8</div>
+    </div>
+    <div class="onerow">
+        <div class="col5 fluid">5</div>
+        <div class="col7 last fluid">7</div>
+    </div>
+    <div class="onerow">
+        <div class="col6 fluid">6</div>
+        <div class="col6 last fluid">6</div>
+    </div>
+    
+    <div class="col6 sample-code">
+    <code>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col1 fluid"&gt;1&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col11 last fluid"&gt;11&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col2 fluid"&gt;2&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col10 last fluid"&gt;10&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col3 fluid"&gt;3&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col9 last fluid"&gt;9&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col4 fluid"&gt;4&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col8 last fluid"&gt;8&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col5 fluid"&gt;5&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col7 last fluid"&gt;7&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col6 fluid"&gt;6&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col6 last fluid"&gt;6&lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    </code>
+    </div>
+    
+    <div class="col12">
+    <h3>All Possible Grid Sizes</h3>
+    </div>
+    
+    <div class="onerow">
+        <div class="col4 small fluid">S 100px <br>Add "small" to class</div>
+        <div class="col3 medium fluid">M 200px <br>Add "medium" to class</div>
+        <div class="col5 large last fluid">L 300px <br>Add "large" to class</div>
+    </div>
+	
+    <div class="col6 sample-code">
+    <code>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col4 small fluid"&gt;S 100px &lt;br&gt;Add "small" to class&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col3 medium fluid"&gt;M 200px &lt;br&gt;Add "medium" to class&lt;/div&gt;<br>&nbsp;
+        &lt;div class="col5 large last fluid"&gt;L 300px &lt;br&gt;Add "large" to class&lt;/div&gt;<br>
+    &lt;/div&gt;
+	</code>
+    </div>
+    
+<!--Typography-->        
+    <div class="onerow">
+        <div class="col12">
+        <h3>Typography</h3>
+        </div>
+    </div>
+            
+    <div class="onerow typography">
+    <div class="col6">
+        <h1>Standard Headings</h1>
+        <h1>Typography&nbsp;<code>&lt;h1&gt;</code></h1>
+        <h2>Typography&nbsp;<code>&lt;h2&gt;</code></h2>
+        <h3>Typography&nbsp;<code>&lt;h3&gt;</code></h3>
+        <h4>Typography&nbsp;<code>&lt;h4&gt;</code></h4>
+        <h5>Typography&nbsp;<code>&lt;h5&gt;</code></h5>
+        <h6>Typography&nbsp;<code>&lt;h6&gt;</code></h6>
+    </div>
+    <div class="col6 last">
+    	<h1>Styled Types</h1>
+		<p>Basic Type&nbsp;<code>&lt;p&gt;</code></p>
+        <p><strong>Bolded</strong>&nbsp;<code>&lt;strong&gt;</code></p>
+    	<p><em>Italicized</em>&nbsp;<code>&lt;em&gt;</code></p>
+        <p><u>Underlined</u>&nbsp;<code>&lt;u&gt;</code></p>
+        
+    </div>
+    </div>
+
+<!--Title and Data Component-->
+    <div class="col12">
+    <h3>Title and Data Component</h3>
+    </div>
+    
+    <div class="onerow">
+        <div class="col5">
+            <div class="data">
+            <div class="data-indicator"></div>
+            <div class="data-heading">Hello</div>
+            <div class="data-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium semper ipsum, eu pulvinar ligula mattis in. Phasellus rutrum suscipit sapien vel dictum. Nullam quis condimentum arcu. Vestibulum auctor fringilla tellus quis viverra. Vestibulum sit amet mi ac risus.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col4">
+            <div class="data">
+            <div class="data-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium semper ipsum, eu pulvinar ligula mattis in. Phasellus rutrum suscipit sapien.</p>
+            </div>
+            </div>
+        </div>
+        <div class="col3 last">
+            <div class="data">
+            <div class="data-indicator"></div>
+            <div class="data-heading">Hello</div>
+            <div class="data-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium semper ipsum, eu pulvinar ligula.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="onerow">
+    <div class="col6 sample-code">
+    <code>
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col6"&gt;<br>&nbsp;&nbsp;
+            &lt;div class="data"&gt;<br>&nbsp;&nbsp;
+            &lt;div class="data-indicator"&gt;&lt;/div&gt;<br>&nbsp;&nbsp;
+            &lt;div class="data-heading"&gt;Heading&lt;/div&gt;<br>&nbsp;&nbsp;
+            &lt;div class="data-text"&gt;<br>&nbsp;&nbsp;&nbsp;
+            &lt;p&gt;Write Here...&lt;/p&gt;<br>&nbsp;&nbsp;
+            &lt;/div&gt;<br>&nbsp;&nbsp;
+            &lt;/div&gt;<br>&nbsp;&nbsp;
+        &lt;/div&gt;<br>
+    &lt;/div&gt;
+    </code>
+	</div>
+    </div>
+
+<!--Image Component-->
+    <div class="onerow">
+        <div class="col12">
+        <h3>Image Component</h3>
+        </div>
+    </div>
+    
+    <div class="onerow">
+        <div class="col3 medium">
+        <div class="image-div-1">
+            <div class="image-overlay">
+                <span class="image-text">Image.jpg
+                </span>
+            </div>
+        </div>
+        </div>
+        <div class="col5 medium">
+        <div class="image-div-2">
+            <div class="image-overlay">
+                <span class="image-text">Image.jpg
+                </span>
+            </div>
+        </div>
+        </div>
+        <div class="col4 medium last">
+        <div class="image-div-3">
+            <div class="image-overlay">
+                <span class="image-text">Image.jpg
+                </span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="onerow">
+    <div class="col6 sample-code">
+    &lt;div class="onerow"&gt;<br>&nbsp;
+        &lt;div class="col3 medium"&gt;<br>&nbsp;
+            &lt;div class="image-div-1"&gt;<br>&nbsp;&nbsp;
+                &lt;div class="image-overlay"&gt;<br>&nbsp;&nbsp;&nbsp;
+                    &lt;span class="image-text"&gt;Image.jpg<br>&nbsp;&nbsp;&nbsp;
+                    &lt;/span&gt;<br>&nbsp;&nbsp;
+                &lt;/div&gt;<br>&nbsp;
+            &lt;/div&gt;<br>&nbsp;
+        &lt;/div&gt;<br>
+    &lt;/div&gt;<br>
+    </div>
+    </div>
+
+
+<!--Video Component-->        
+    <div class="onerow">
+        <div class="col12">
+        <h3>Video Component</h3>
+        </div>
+    </div>
+    
+    <div class="onerow">
+    	<div class="col6 last">
+    	<video controls class="video-div">
+	        <source src="videos/video_1.mp4" type="video/mp4">
+        </video>
+        <div class="video-footer">
+                <span class="video-text">Video.mp4
+                </span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="onerow">
+    <div class="col6 sample-code">
+    &lt;div class="onerow"&gt;<br>
+&nbsp;        &lt;div class="col6 medium"&gt;<br>
+&nbsp;&nbsp;            &lt;video controls class="video-div"&gt;<br>
+&nbsp;&nbsp;&nbsp;                &lt;source src="videos/video_1.mp4" type="video/mp4"&gt;<br>
+&nbsp;&nbsp;            &lt;/video&gt;<br>
+&nbsp;&nbsp;            &lt;div class="video-footer"&gt;<br>
+&nbsp;&nbsp;&nbsp;                &lt;span class="video-text"&gt;Video.mp4<br>
+&nbsp;&nbsp;&nbsp;                &lt;/span&gt;<br>
+&nbsp;&nbsp;            &lt;/div&gt;<br>
+&nbsp;        &lt;/div&gt;<br>
+    &lt;/div&gt;
+    </div>
+	</div>
+    
+<!--Form Component-->    
+    <div class="onerow">
+        <div class="col12">
+        <h3>Form Components</h3>
+        </div>
+    </div>
+    
+    <div class="onerow">
+    <!--Button Component--> 
+        <div class="col12 last">
+        	<div class="button-div">
+        	<h4>Simple and Coloured Button</h4>
+            <button class="button-simple-div">Button</button>
+            <button class="button-color-div">Button</button>
+        	</div>
+        </div>
+	</div>
+    
+    <!--Round Button Component--> 
+    <div class="onerow">
+		<div class="col6">
+        	<div class="button-div">
+            <h4>Round Button</h4>
+            <button class="round-button-div"><i class="material-icons">home</i></button>
+            <button class="round-button-div"><i class="material-icons">event</i></button>
+            <button class="round-button-div"><i class="material-icons">watch</i></button>
+            <button class="round-button-div"><i class="material-icons">people</i></button>
+            <button class="round-button-div"><i class="material-icons">book</i></button>
+        	</div>
+        </div>
+        <div class="col6 last">
+        	<div class="button-div">
+            <h4>Round Button Sizes</h4>
+            <button class="round-button-div small-round-button"><i class="material-icons">home</i></button>
+            <button class="round-button-div medium-round-button"><i class="material-icons">home</i></button>
+        	<button class="round-button-div large-round-button"><i class="material-icons">home</i></button>
+        	</div>
+        </div>
+	</div>
+    
+    <div class="onerow">
+    <!--Checkbox Component--> 
+        <div class="checkbox-div col6">
+        	<h4>Checked Checkbox</h4>
+            <input type="checkbox" id="cb1" name="checkbox" checked>
+            <label for="cb1">Ckeckbox Checked</label>
+        </div>
+        <div class="checkbox-div col6 last">
+        	<h4>Unchecked Checckbox</h4>
+            <input type="checkbox" id="cb2" name="checkbox">
+            <label for="cb2">Ckeckbox Unchecked</label>
+        </div>
+	</div>
+    
+    <div class="onerow">
+	<!--Radio Button Component--> 
+        <div class="radio-div col6">
+        	<h4>Active Radio Button</h4>
+            <input type="radio" id="rd1" name="radio" value="Option 1" checked>
+            <label for="rd1">Radio On</label>
+        </div>
+        <div class="radio-div col6 last">
+        	<h4>Inactive Radio Button</h4>
+            <input type="radio" id="rd2" name="radio" value="Option 2">
+            <label for="rd2">Radio Off</label>
+        </div>
+    </div>
+    
+    <!--Simple Input Component-->
+    <div class="onerow"> 
+		<div class="col6">
+            <div class="text-form-div">
+                <h4>First name</h4>
+                <input type="text" name="firstname"  class="text-form-input" placeholder="Shubham">
+            </div>
+        </div>
+        <div class="col6 last">
+            <div class="text-form-div">
+                <h4>Last name</h4>
+                <input type="text" name="lastname" class="text-form-input" placeholder="Naik">
+            </div>
+         </div>
+     </div>
+    
+    <div class="onerow">    
+    <!--Textarea Component-->     
+        <div class="col6">
+            <div class="textarea-div">
+            <h4>Message</h4>
+            <textarea class="textarea-data" cols="" rows="5" placeholder="Hello ..."></textarea>
+            </div>
+        </div>    
+    <!--Dropdown Component--> 
+    	<div class="col6 last">
+            <div class="dropdown-div">
+            <h4>Select an option</h4>
+            <select class="dropdown-options">
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+            <option value="option4">Option 4</option>
+            </select>
+            </div>
+         </div>
+    </div>
+
+<!--Tables-->        
+    <div class="onerow">
+        <div class="col12">
+        <h3>Table Component</h3>
+        </div>
+    </div>
+
+    <div class="onerow">
+    <div class="col6 last">
+    <div class="table-div">
+    <table>
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Savings</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Peter</td>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td>$100</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Lois</td>
+            <td>Lois</td>
+            <td>Griffin</td>
+            <td>$150</td>
+			<td>25</td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td>$300</td>
+        	<td>25</td>
+		</tr>
+        <tr >
+            <td>Cleveland</td>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td>$250</td>
+	        <td>25</td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+	</div>
+    
+<!--Scrollbar-->        
+    <div class="onerow">
+        <div class="col12">
+        <h3>Scrollbar Component (Note: Notice the scrollbar component (Editable in SASS and CSS))</h3>
+        </div>
+    </div>
+    
+    
+    
+    
+</div>
+</body>
+
+</html>
