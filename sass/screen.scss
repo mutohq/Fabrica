@@ -216,6 +216,33 @@ html,body{
 	}
 }
 /* **********************************************************************************************************************
+ * Footer
+ */
+.footer {
+	position: fixed;
+	background-color : white;
+	height: 50px;
+	width: 100%;
+	border-top: 2px solid $primary-color;
+	bottom:0px;
+	text-align: center;
+	
+	a { 
+		text-decoration: none;
+		color: black;
+	}
+	
+	p {
+		margin-top: -5px;
+		font-size: 12px;
+	}
+	
+	i {
+		margin-top: 10px;
+		color: $primary-color;
+	}
+}
+/* **********************************************************************************************************************
  * Header
  */
 /************************** Header **************************/
