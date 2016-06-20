@@ -575,3 +575,306 @@ td {
 	background: $primary-color;
 	border-radius: $border-rad;
 }
+/* **********************************************************************************************************************
+ * Card Component
+ */
+[class*="card-type"] {
+	box-shadow: 2px 2px 10px grey;
+	margin-bottom: 10px;
+}
+[class*="card-image"] {
+	background: url(../images/image_1.png) center/cover ;
+	width: 100%;
+}
+/************************** Card Type 1 **************************/
+.card-type-1 {
+	
+	.card-text {
+		font: $font;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		text-indent: 5%;
+	}
+	
+	.card-text-heading {
+		font: $font;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		color: $primary-color;
+	}
+	
+	.card-header {
+		background-color: $primary-color;
+		height: 40px;
+		
+		.card-header-text {
+			color: $video-text-color;
+			font-size: 16px;
+			font-weight: 500;
+			text-align: left;
+			margin-left: 10px;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 45px;
+			width: 100%;
+		}
+	
+		i {
+			margin-top: 8px;
+			margin-right: 20px;
+			float:right;
+		}
+	}
+	.card-footer {
+		background-color: $primary-color;
+		height: 40px;
+		
+		.card-footer-text {
+			color: $video-text-color;
+			font-size: 16px;
+			font-weight: 500;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 45px;
+			width: 100%;
+		}
+	}
+	.card-button-simple-div {
+		text-align: center;
+		background-color: $primary-color;
+		border: 2px solid white;
+		padding: 4px 8px;
+		color: white;;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 14px;
+		margin: 6px 10px;
+		float: right;
+		border-radius: $border-rad;
+	}
+}
+/************************** Card Type 2 **************************/
+.card-type-2 {
+	
+	.card-text {
+		font: $font;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		text-indent: 5%;
+	}
+	
+	.card-text-heading {
+		font: $font;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		color: $primary-color;
+	}
+	
+	.card-header {
+		background-color: white;
+		height: 40px;
+		
+		.card-header-text {
+			color: $primary-color;
+			font-size: 16px;
+			font-weight: 500;
+			text-align: left;
+			margin-left: 10px;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 45px;
+			width: 100%;
+		}
+	
+		i {
+			margin-top: 8px;
+			margin-right: 20px;
+			float:right;
+		}
+	}
+	.card-footer {
+		background-color: white;
+		height: 40px;
+		border-top: 2px solid $primary-color;
+		
+		.card-footer-text {
+			color: $video-text-color;
+			font-size: 16px;
+			font-weight: 500;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 45px;
+			width: 100%;
+		}
+	}
+	.card-button-simple-div {
+		text-align: center;
+		background-color: white;
+		border: 2px solid $primary-color;
+		padding: 4px 8px;
+		color: $primary-color;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 14px;
+		margin: 6px 10px;
+		float: right;
+		border-radius: $border-rad;
+	}
+}
+/************************** Card Type 3 **************************/
+.card-type-3 {
+	
+	.card-text {
+		font: $font;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		text-indent: 5%;
+	}
+	
+	.card-text-heading {
+		font: $font;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 5px;
+		color: $primary-color;
+		padding-top: 10px;
+	}
+	
+	.card-header {
+		background-color: white;
+		height: 40px;
+		
+		.card-header-text {
+			color: $primary-color;
+			font-size: 16px;
+			font-weight: 500;
+			text-align: left;
+			margin-left: 10px;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 45px;
+			width: 100%;
+		}
+	
+		i {
+			margin-top: 8px;
+			margin-right: 20px;
+			float:right;
+		}
+	}
+	.card-footer {
+		background-color: $primary-color;;
+		height: 40px;
+		border-top: 2px solid white;
+		
+		.card-footer-text {
+			color: white;
+			font-size: 16px;
+			font-weight: 500;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 45px;
+			width: 100%;
+		}
+	}
+	
+	.card-button-simple-div {
+		text-align: center;
+		background-color: $primary-color;
+		border: 2px solid white;
+		padding: 4px 8px;
+		color: white;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 14px;
+		margin: 6px 10px;
+		float: right;
+		border-radius: $border-rad;
+	}
+}
+/************************** Card Type 4 **************************/
+.card-type-4 {
+	
+	.card-text {
+		font: $font;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		text-indent: 5%;
+	}
+	
+	.card-text-heading {
+		font: $font;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 5px;
+		color: $primary-color;
+		padding-top: 10px;
+	}
+	
+	.card-header {
+		background-color: white;
+		height: 40px;
+		
+		.card-header-text {
+			color: $primary-color;
+			font-size: 16px;
+			font-weight: 500;
+			text-align: left;
+			margin-left: 10px;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 45px;
+			width: 100%;
+		}
+	
+		i {
+			margin-top: 8px;
+			margin-right: 20px;
+			float:right;
+		}
+	}
+	.card-footer {
+		background-color: white;
+		height: 40px;
+		border-top: 2px solid $primary-color;
+		
+		.card-footer-text {
+			color: $video-text-color;
+			font-size: 16px;
+			font-weight: 500;
+			text-align: center;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 45px;
+			width: 100%;
+		}
+	}
+	.card-button-simple-div {
+		text-align: center;
+		background-color: white;
+		border: 2px solid $primary-color;
+		padding: 4px 8px;
+		color: $primary-color;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 14px;
+		margin: 6px 10px;
+		float: right;
+		border-radius: $border-rad;
+	}
+}
