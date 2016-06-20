@@ -730,3 +730,313 @@ td {
   background: #29B6F6;
   border-radius: 4px;
 }
+
+/* **********************************************************************************************************************
+ * Card Component
+ */
+/* line 581, ../sass/screen.scss */
+[class*="card-type"] {
+  box-shadow: 2px 2px 10px grey;
+  margin-bottom: 10px;
+}
+
+/* line 585, ../sass/screen.scss */
+[class*="card-image"] {
+  background: url(../images/image_1.png) center/cover;
+  width: 100%;
+}
+
+/************************** Card Type 1 **************************/
+/* line 592, ../sass/screen.scss */
+.card-type-1 .card-text {
+  font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-indent: 5%;
+}
+/* line 601, ../sass/screen.scss */
+.card-type-1 .card-text-heading {
+  font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #29B6F6;
+}
+/* line 610, ../sass/screen.scss */
+.card-type-1 .card-header {
+  background-color: #29B6F6;
+  height: 40px;
+}
+/* line 614, ../sass/screen.scss */
+.card-type-1 .card-header .card-header-text {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 45px;
+  width: 100%;
+}
+/* line 626, ../sass/screen.scss */
+.card-type-1 .card-header i {
+  margin-top: 8px;
+  margin-right: 20px;
+  float: right;
+}
+/* line 632, ../sass/screen.scss */
+.card-type-1 .card-footer {
+  background-color: #29B6F6;
+  height: 40px;
+}
+/* line 636, ../sass/screen.scss */
+.card-type-1 .card-footer .card-footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 45px;
+  width: 100%;
+}
+/* line 647, ../sass/screen.scss */
+.card-type-1 .card-button-simple-div {
+  text-align: center;
+  background-color: #29B6F6;
+  border: 2px solid white;
+  padding: 4px 8px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 6px 10px;
+  float: right;
+  border-radius: 4px;
+}
+
+/************************** Card Type 2 **************************/
+/* line 664, ../sass/screen.scss */
+.card-type-2 .card-text {
+  font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-indent: 5%;
+}
+/* line 673, ../sass/screen.scss */
+.card-type-2 .card-text-heading {
+  font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #29B6F6;
+}
+/* line 682, ../sass/screen.scss */
+.card-type-2 .card-header {
+  background-color: white;
+  height: 40px;
+}
+/* line 686, ../sass/screen.scss */
+.card-type-2 .card-header .card-header-text {
+  color: #29B6F6;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 45px;
+  width: 100%;
+}
+/* line 698, ../sass/screen.scss */
+.card-type-2 .card-header i {
+  margin-top: 8px;
+  margin-right: 20px;
+  float: right;
+}
+/* line 704, ../sass/screen.scss */
+.card-type-2 .card-footer {
+  background-color: white;
+  height: 40px;
+  border-top: 2px solid #29B6F6;
+}
+/* line 709, ../sass/screen.scss */
+.card-type-2 .card-footer .card-footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 45px;
+  width: 100%;
+}
+/* line 720, ../sass/screen.scss */
+.card-type-2 .card-button-simple-div {
+  text-align: center;
+  background-color: white;
+  border: 2px solid #29B6F6;
+  padding: 4px 8px;
+  color: #29B6F6;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 6px 10px;
+  float: right;
+  border-radius: 4px;
+}
+
+/************************** Card Type 3 **************************/
+/* line 737, ../sass/screen.scss */
+.card-type-3 .card-text {
+  font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-indent: 5%;
+}
+/* line 746, ../sass/screen.scss */
+.card-type-3 .card-text-heading {
+  font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  color: #29B6F6;
+  padding-top: 10px;
+}
+/* line 755, ../sass/screen.scss */
+.card-type-3 .card-header {
+  background-color: white;
+  height: 40px;
+}
+/* line 759, ../sass/screen.scss */
+.card-type-3 .card-header .card-header-text {
+  color: #29B6F6;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 45px;
+  width: 100%;
+}
+/* line 771, ../sass/screen.scss */
+.card-type-3 .card-header i {
+  margin-top: 8px;
+  margin-right: 20px;
+  float: right;
+}
+/* line 777, ../sass/screen.scss */
+.card-type-3 .card-footer {
+  background-color: #29B6F6;
+  height: 40px;
+  border-top: 2px solid white;
+}
+/* line 782, ../sass/screen.scss */
+.card-type-3 .card-footer .card-footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 45px;
+  width: 100%;
+}
+/* line 794, ../sass/screen.scss */
+.card-type-3 .card-button-simple-div {
+  text-align: center;
+  background-color: #29B6F6;
+  border: 2px solid white;
+  padding: 4px 8px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 6px 10px;
+  float: right;
+  border-radius: 4px;
+}
+
+/************************** Card Type 4 **************************/
+/* line 811, ../sass/screen.scss */
+.card-type-4 .card-text {
+  font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-indent: 5%;
+}
+/* line 820, ../sass/screen.scss */
+.card-type-4 .card-text-heading {
+  font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  color: #29B6F6;
+  padding-top: 10px;
+}
+/* line 829, ../sass/screen.scss */
+.card-type-4 .card-header {
+  background-color: white;
+  height: 40px;
+}
+/* line 833, ../sass/screen.scss */
+.card-type-4 .card-header .card-header-text {
+  color: #29B6F6;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 45px;
+  width: 100%;
+}
+/* line 845, ../sass/screen.scss */
+.card-type-4 .card-header i {
+  margin-top: 8px;
+  margin-right: 20px;
+  float: right;
+}
+/* line 851, ../sass/screen.scss */
+.card-type-4 .card-footer {
+  background-color: white;
+  height: 40px;
+  border-top: 2px solid #29B6F6;
+}
+/* line 856, ../sass/screen.scss */
+.card-type-4 .card-footer .card-footer-text {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 45px;
+  width: 100%;
+}
+/* line 867, ../sass/screen.scss */
+.card-type-4 .card-button-simple-div {
+  text-align: center;
+  background-color: white;
+  border: 2px solid #29B6F6;
+  padding: 4px 8px;
+  color: #29B6F6;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 6px 10px;
+  float: right;
+  border-radius: 4px;
+}
