@@ -379,29 +379,30 @@ html, body {
   left: 0px;
   background-color: white;
   width: 100%;
+  height: 100%;
   color: black;
   display: none;
 }
-/* line 286, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .menucontent .onerow {
   padding-bottom: 10px;
 }
-/* line 290, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .menucontent ul {
   margin-left: 60px;
 }
-/* line 293, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .menucontent ul li {
   padding: 6px;
   font-size: 18px;
 }
-/* line 297, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .menucontent ul li i {
   color: #29B6F6;
   margin-right: 10px;
 }
 
-/* line 304, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .menuhide {
   text-decoration: none;
   display: inline-block;
@@ -417,12 +418,12 @@ html, body {
  * Form Component
  */
 /************************** Button **************************/
-/* line 318, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 .button-div {
   padding: 4px;
 }
 
-/* line 321, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .button-simple-div {
   text-align: center;
   background-color: white;
@@ -436,12 +437,12 @@ html, body {
   border-radius: 4px;
   outline: none;
 }
-/* line 334, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .button-simple-div:hover {
   opacity: 0.5;
 }
 
-/* line 338, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .button-color-div {
   text-align: center;
   background-color: #29B6F6;
@@ -455,13 +456,13 @@ html, body {
   border-radius: 4px;
   outline: none;
 }
-/* line 351, ../sass/screen.scss */
+/* line 352, ../sass/screen.scss */
 .button-color-div:hover {
   opacity: 0.5;
   border: 2px solid #29B6F6;
 }
 
-/* line 356, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 .round-button-div {
   text-align: center;
   background-color: #29B6F6;
@@ -477,68 +478,68 @@ html, body {
   outline: none;
   box-shadow: 1px 1px 10px grey;
 }
-/* line 371, ../sass/screen.scss */
+/* line 372, ../sass/screen.scss */
 .round-button-div i {
   padding-top: 5px;
 }
-/* line 375, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 .round-button-div:hover {
   opacity: 0.5;
   border: 2px solid #29B6F6;
 }
 
-/* line 380, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 .small-round-button {
   height: 40px;
   width: 40px;
   margin-right: 10px;
 }
-/* line 385, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .small-round-button i {
   padding-top: 3px;
   padding-left: -1px;
 }
 
-/* line 390, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .medium-round-button {
   height: 45px;
   width: 45px;
   margin-right: 10px;
 }
-/* line 395, ../sass/screen.scss */
+/* line 396, ../sass/screen.scss */
 .medium-round-button i {
   padding-top: 2px;
 }
 
-/* line 399, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .large-round-button {
   height: 55px;
   width: 55px;
   margin-right: 10px;
 }
-/* line 404, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .large-round-button i {
   padding-top: 2px;
 }
 
 /************************** Checkbox **************************/
-/* line 409, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 .checkbox-div {
   padding-bottom: 2px;
   padding: 4px;
 }
 
-/* line 413, ../sass/screen.scss */
+/* line 414, ../sass/screen.scss */
 input[type="checkbox"] {
   display: none;
 }
 
-/* line 416, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 label {
   cursor: pointer;
 }
 
-/* line 419, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 input[type="checkbox"] + label:before {
   border: 2px solid grey;
   content: "\00a0";
@@ -550,7 +551,7 @@ input[type="checkbox"] + label:before {
   width: 16px;
 }
 
-/* line 429, ../sass/screen.scss */
+/* line 430, ../sass/screen.scss */
 input[type="checkbox"]:checked + label:before {
   opacity: 0.7;
   color: #29B6F6;
@@ -559,29 +560,29 @@ input[type="checkbox"]:checked + label:before {
   border: 2px solid #29B6F6;
 }
 
-/* line 436, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 input[type="checkbox"]:checked + label:after {
   font-weight: bold;
 }
 
 /************************** Radio Button **************************/
-/* line 440, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 .radio-div {
   padding-bottom: 2px;
   padding: 4px;
 }
 
-/* line 444, ../sass/screen.scss */
+/* line 445, ../sass/screen.scss */
 input[type="radio"] {
   display: none;
 }
 
-/* line 447, ../sass/screen.scss */
+/* line 448, ../sass/screen.scss */
 label {
   cursor: pointer;
 }
 
-/* line 450, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 input[type="radio"] + label:before {
   border: 2px solid grey;
   content: "\00a0";
@@ -595,7 +596,7 @@ input[type="radio"] + label:before {
   border-radius: 4px;
 }
 
-/* line 462, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 input[type="radio"]:checked + label:before {
   opacity: 0.7;
   color: #29B6F6;
@@ -604,22 +605,22 @@ input[type="radio"]:checked + label:before {
   border: 2px solid #29B6F6;
 }
 
-/* line 469, ../sass/screen.scss */
+/* line 470, ../sass/screen.scss */
 input[type="radio"]:checked + label:after {
   font-weight: bold;
 }
 
 /************************** Simple Input **************************/
-/* line 473, ../sass/screen.scss */
+/* line 474, ../sass/screen.scss */
 :webkit-textarea-placeholder {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-/* line 476, ../sass/screen.scss */
+/* line 477, ../sass/screen.scss */
 .text-form-div {
   margin: 4px 4px;
 }
-/* line 479, ../sass/screen.scss */
+/* line 480, ../sass/screen.scss */
 .text-form-div .text-form-input {
   border: 2px solid grey;
   height: 30px;
@@ -629,7 +630,7 @@ input[type="radio"]:checked + label:after {
   outline: none;
   width: 100%;
 }
-/* line 488, ../sass/screen.scss */
+/* line 489, ../sass/screen.scss */
 .text-form-div .text-form-input:hover {
   border: 2px solid #29B6F6;
   border-radius: 4px;
@@ -638,12 +639,12 @@ input[type="radio"]:checked + label:after {
 }
 
 /************************** Textarea Input **************************/
-/* line 498, ../sass/screen.scss */
+/* line 499, ../sass/screen.scss */
 .textarea-div {
   margin: 4px 4px;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
-/* line 502, ../sass/screen.scss */
+/* line 503, ../sass/screen.scss */
 .textarea-div .textarea-data {
   border: 2px solid grey;
   border-radius: 4px;
@@ -652,7 +653,7 @@ input[type="radio"]:checked + label:after {
   outline: none;
   width: 100%;
 }
-/* line 510, ../sass/screen.scss */
+/* line 511, ../sass/screen.scss */
 .textarea-div .textarea-data:hover {
   border: 2px solid #29B6F6;
   border-radius: 4px;
@@ -661,12 +662,12 @@ input[type="radio"]:checked + label:after {
 }
 
 /************************** Dropdown Input **************************/
-/* line 519, ../sass/screen.scss */
+/* line 520, ../sass/screen.scss */
 .dropdown-div {
   margin: 4px 4px;
   width: 100.75%;
 }
-/* line 523, ../sass/screen.scss */
+/* line 524, ../sass/screen.scss */
 .dropdown-div .dropdown-options {
   border: 2px solid grey;
   height: 40px;
@@ -675,7 +676,7 @@ input[type="radio"]:checked + label:after {
   outline: none;
   width: 100%;
 }
-/* line 531, ../sass/screen.scss */
+/* line 532, ../sass/screen.scss */
 .dropdown-div .dropdown-options:hover {
   border: 2px solid #29B6F6;
 }
@@ -683,7 +684,7 @@ input[type="radio"]:checked + label:after {
 /* **********************************************************************************************************************
  * Tables
  */
-/* line 540, ../sass/screen.scss */
+/* line 541, ../sass/screen.scss */
 table {
   width: 100%;
   overflow-x: auto;
@@ -692,7 +693,7 @@ table {
   display: block;
 }
 
-/* line 547, ../sass/screen.scss */
+/* line 548, ../sass/screen.scss */
 th {
   font-size: large;
   padding-top: 10px;
@@ -702,7 +703,7 @@ th {
   border-bottom: 2px solid #29B6F6;
 }
 
-/* line 555, ../sass/screen.scss */
+/* line 556, ../sass/screen.scss */
 td {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -713,18 +714,18 @@ td {
 /* **********************************************************************************************************************
  * Scroll Bar
  */
-/* line 564, ../sass/screen.scss */
+/* line 565, ../sass/screen.scss */
 ::-webkit-scrollbar {
   height: 4px;
   width: 4px;
 }
 
-/* line 569, ../sass/screen.scss */
+/* line 570, ../sass/screen.scss */
 ::-webkit-scrollbar-track {
   background: none;
 }
 
-/* line 573, ../sass/screen.scss */
+/* line 574, ../sass/screen.scss */
 ::-webkit-scrollbar-thumb {
   background: #29B6F6;
   border-radius: 4px;
@@ -733,20 +734,20 @@ td {
 /* **********************************************************************************************************************
  * Card Component
  */
-/* line 580, ../sass/screen.scss */
+/* line 581, ../sass/screen.scss */
 [class*="card-type"] {
   box-shadow: 2px 2px 10px grey;
   margin-bottom: 10px;
 }
 
-/* line 584, ../sass/screen.scss */
+/* line 585, ../sass/screen.scss */
 [class*="card-image"] {
   background: url(../images/image_1.png) center/cover;
   width: 100%;
 }
 
 /************************** Card Type 1 **************************/
-/* line 591, ../sass/screen.scss */
+/* line 592, ../sass/screen.scss */
 .card-type-1 .card-text {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -755,7 +756,7 @@ td {
   margin-bottom: 5px;
   text-indent: 5%;
 }
-/* line 600, ../sass/screen.scss */
+/* line 601, ../sass/screen.scss */
 .card-type-1 .card-text-heading {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -764,12 +765,12 @@ td {
   margin-bottom: 5px;
   color: #29B6F6;
 }
-/* line 609, ../sass/screen.scss */
+/* line 610, ../sass/screen.scss */
 .card-type-1 .card-header {
   background-color: #29B6F6;
   height: 40px;
 }
-/* line 613, ../sass/screen.scss */
+/* line 614, ../sass/screen.scss */
 .card-type-1 .card-header .card-header-text {
   color: white;
   font-size: 16px;
@@ -781,18 +782,18 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 625, ../sass/screen.scss */
+/* line 626, ../sass/screen.scss */
 .card-type-1 .card-header i {
   margin-top: 8px;
   margin-right: 20px;
   float: right;
 }
-/* line 631, ../sass/screen.scss */
+/* line 632, ../sass/screen.scss */
 .card-type-1 .card-footer {
   background-color: #29B6F6;
   height: 40px;
 }
-/* line 635, ../sass/screen.scss */
+/* line 636, ../sass/screen.scss */
 .card-type-1 .card-footer .card-footer-text {
   color: white;
   font-size: 16px;
@@ -803,7 +804,7 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 646, ../sass/screen.scss */
+/* line 647, ../sass/screen.scss */
 .card-type-1 .card-button-simple-div {
   text-align: center;
   background-color: #29B6F6;
@@ -819,7 +820,7 @@ td {
 }
 
 /************************** Card Type 2 **************************/
-/* line 663, ../sass/screen.scss */
+/* line 664, ../sass/screen.scss */
 .card-type-2 .card-text {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -828,7 +829,7 @@ td {
   margin-bottom: 5px;
   text-indent: 5%;
 }
-/* line 672, ../sass/screen.scss */
+/* line 673, ../sass/screen.scss */
 .card-type-2 .card-text-heading {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -837,12 +838,12 @@ td {
   margin-bottom: 5px;
   color: #29B6F6;
 }
-/* line 681, ../sass/screen.scss */
+/* line 682, ../sass/screen.scss */
 .card-type-2 .card-header {
   background-color: white;
   height: 40px;
 }
-/* line 685, ../sass/screen.scss */
+/* line 686, ../sass/screen.scss */
 .card-type-2 .card-header .card-header-text {
   color: #29B6F6;
   font-size: 16px;
@@ -854,19 +855,19 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 697, ../sass/screen.scss */
+/* line 698, ../sass/screen.scss */
 .card-type-2 .card-header i {
   margin-top: 8px;
   margin-right: 20px;
   float: right;
 }
-/* line 703, ../sass/screen.scss */
+/* line 704, ../sass/screen.scss */
 .card-type-2 .card-footer {
   background-color: white;
   height: 40px;
   border-top: 2px solid #29B6F6;
 }
-/* line 708, ../sass/screen.scss */
+/* line 709, ../sass/screen.scss */
 .card-type-2 .card-footer .card-footer-text {
   color: white;
   font-size: 16px;
@@ -877,7 +878,7 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 719, ../sass/screen.scss */
+/* line 720, ../sass/screen.scss */
 .card-type-2 .card-button-simple-div {
   text-align: center;
   background-color: white;
@@ -893,7 +894,7 @@ td {
 }
 
 /************************** Card Type 3 **************************/
-/* line 736, ../sass/screen.scss */
+/* line 737, ../sass/screen.scss */
 .card-type-3 .card-text {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -902,7 +903,7 @@ td {
   margin-bottom: 5px;
   text-indent: 5%;
 }
-/* line 745, ../sass/screen.scss */
+/* line 746, ../sass/screen.scss */
 .card-type-3 .card-text-heading {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -911,12 +912,12 @@ td {
   color: #29B6F6;
   padding-top: 10px;
 }
-/* line 754, ../sass/screen.scss */
+/* line 755, ../sass/screen.scss */
 .card-type-3 .card-header {
   background-color: white;
   height: 40px;
 }
-/* line 758, ../sass/screen.scss */
+/* line 759, ../sass/screen.scss */
 .card-type-3 .card-header .card-header-text {
   color: #29B6F6;
   font-size: 16px;
@@ -928,19 +929,19 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 770, ../sass/screen.scss */
+/* line 771, ../sass/screen.scss */
 .card-type-3 .card-header i {
   margin-top: 8px;
   margin-right: 20px;
   float: right;
 }
-/* line 776, ../sass/screen.scss */
+/* line 777, ../sass/screen.scss */
 .card-type-3 .card-footer {
   background-color: #29B6F6;
   height: 40px;
   border-top: 2px solid white;
 }
-/* line 781, ../sass/screen.scss */
+/* line 782, ../sass/screen.scss */
 .card-type-3 .card-footer .card-footer-text {
   color: white;
   font-size: 16px;
@@ -951,7 +952,7 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 793, ../sass/screen.scss */
+/* line 794, ../sass/screen.scss */
 .card-type-3 .card-button-simple-div {
   text-align: center;
   background-color: #29B6F6;
@@ -967,7 +968,7 @@ td {
 }
 
 /************************** Card Type 4 **************************/
-/* line 810, ../sass/screen.scss */
+/* line 811, ../sass/screen.scss */
 .card-type-4 .card-text {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -976,7 +977,7 @@ td {
   margin-bottom: 5px;
   text-indent: 5%;
 }
-/* line 819, ../sass/screen.scss */
+/* line 820, ../sass/screen.scss */
 .card-type-4 .card-text-heading {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -985,12 +986,12 @@ td {
   color: #29B6F6;
   padding-top: 10px;
 }
-/* line 828, ../sass/screen.scss */
+/* line 829, ../sass/screen.scss */
 .card-type-4 .card-header {
   background-color: white;
   height: 40px;
 }
-/* line 832, ../sass/screen.scss */
+/* line 833, ../sass/screen.scss */
 .card-type-4 .card-header .card-header-text {
   color: #29B6F6;
   font-size: 16px;
@@ -1002,19 +1003,19 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 844, ../sass/screen.scss */
+/* line 845, ../sass/screen.scss */
 .card-type-4 .card-header i {
   margin-top: 8px;
   margin-right: 20px;
   float: right;
 }
-/* line 850, ../sass/screen.scss */
+/* line 851, ../sass/screen.scss */
 .card-type-4 .card-footer {
   background-color: white;
   height: 40px;
   border-top: 2px solid #29B6F6;
 }
-/* line 855, ../sass/screen.scss */
+/* line 856, ../sass/screen.scss */
 .card-type-4 .card-footer .card-footer-text {
   color: white;
   font-size: 16px;
@@ -1025,7 +1026,7 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 866, ../sass/screen.scss */
+/* line 867, ../sass/screen.scss */
 .card-type-4 .card-button-simple-div {
   text-align: center;
   background-color: white;
@@ -1043,7 +1044,7 @@ td {
 /* **********************************************************************************************************************
  * Badge Component
  */
-/* line 885, ../sass/screen.scss */
+/* line 886, ../sass/screen.scss */
 .badge-type-1 .badge-data {
   background-color: #29B6F6;
   padding: 2px 4px;
@@ -1051,14 +1052,14 @@ td {
   border-radius: 4px;
 }
 
-/* line 893, ../sass/screen.scss */
+/* line 894, ../sass/screen.scss */
 .badge-type-2 .badge-data {
   background-color: #29B6F6;
   padding: 5px 3px 1px 2px;
   color: white;
   border-radius: 4px;
 }
-/* line 899, ../sass/screen.scss */
+/* line 900, ../sass/screen.scss */
 .badge-type-2 .badge-data .material-icons {
   color: white;
   font-size: 1em;
@@ -1067,7 +1068,7 @@ td {
 /* **********************************************************************************************************************
  * Toast Component
  */
-/* line 908, ../sass/screen.scss */
+/* line 909, ../sass/screen.scss */
 #snackbar-1 {
   visibility: hidden;
   min-width: 250px;
@@ -1085,7 +1086,7 @@ td {
   font-size: 17px;
 }
 
-/* line 924, ../sass/screen.scss */
+/* line 925, ../sass/screen.scss */
 #snackbar-2 {
   visibility: hidden;
   min-width: 250px;
@@ -1102,7 +1103,7 @@ td {
   font-size: 17px;
 }
 
-/* line 940, ../sass/screen.scss */
+/* line 941, ../sass/screen.scss */
 .show {
   visibility: visible !important;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -1152,13 +1153,13 @@ td {
 /* **********************************************************************************************************************
  * Tooltip Component
  */
-/* line 968, ../sass/screen.scss */
+/* line 969, ../sass/screen.scss */
 .tooltip {
   position: relative;
   display: inline-block;
 }
 
-/* line 973, ../sass/screen.scss */
+/* line 974, ../sass/screen.scss */
 .tooltip .tooltiptext {
   visibility: hidden;
   padding-left: 4px;
@@ -1174,7 +1175,7 @@ td {
   z-index: 1;
 }
 
-/* line 989, ../sass/screen.scss */
+/* line 990, ../sass/screen.scss */
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
@@ -1182,7 +1183,7 @@ td {
 /* **********************************************************************************************************************
  * Tabs Component
  */
-/* line 995, ../sass/screen.scss */
+/* line 996, ../sass/screen.scss */
 ul.tab {
   list-style-type: none;
   margin: 0;
@@ -1192,19 +1193,19 @@ ul.tab {
   background-color: white;
   width: inherit;
 }
-/* line 1004, ../sass/screen.scss */
+/* line 1005, ../sass/screen.scss */
 ul.tab i {
   font-size: 0.8em;
 }
 
 /* Float the list items side by side */
-/* line 1010, ../sass/screen.scss */
+/* line 1011, ../sass/screen.scss */
 ul.tab li {
   float: left;
 }
 
 /* Style the links inside the list items */
-/* line 1013, ../sass/screen.scss */
+/* line 1014, ../sass/screen.scss */
 ul.tab li a {
   display: inline-block;
   color: black;
@@ -1216,29 +1217,39 @@ ul.tab li a {
   border-right: none;
 }
 
-/* line 1023, ../sass/screen.scss */
+/* line 1024, ../sass/screen.scss */
 ul.tab li:last-child, a:last-child {
   border-right: 2px solid #29B6F6;
 }
 
 /* Change background color of links on hover */
-/* line 1028, ../sass/screen.scss */
+/* line 1029, ../sass/screen.scss */
 ul.tab li a:hover {
   background-color: #ddd;
   color: white;
 }
 
 /* Create an active/current tablink class */
-/* line 1034, ../sass/screen.scss */
+/* line 1035, ../sass/screen.scss */
 ul.tab li a:focus, .active {
   background-color: #29B6F6;
   color: white;
 }
 
 /* Style the tab content */
-/* line 1040, ../sass/screen.scss */
+/* line 1041, ../sass/screen.scss */
 .tabcontent {
   display: none;
   padding-top: 8px;
   padding-left: 10px;
+}
+
+/* **********************************************************************************************************************
+ * Code Component
+ */
+/* line 1049, ../sass/screen.scss */
+.code-div {
+  background-color: #f1f1f1;
+  overflow-x: auto;
+  border: 2px solid #29B6F6;
 }
