@@ -535,7 +535,7 @@ document.getElementById(id).style.display = visibility;
 
 </div>
 
-<!--card Component-->
+<!--Card Component-->
 <div class="card-section">
 
     <div class="row">
@@ -629,9 +629,160 @@ document.getElementById(id).style.display = visibility;
 
 </div>
 
-<br><br><br>
+
+<!--Badge Component-->
+<div class="badge-section">
+
+    <div class="row">
+        <div class="col-lg-12">
+        <h3>Badge Component</h3>
+        </div>
+    </div>
+    
+    <div class="row">
+    	<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+            <h4>Text Badge</h4>
+            <div class="badge-type-1">
+            <p>Inbox <span class="badge-data">13</span></p>
+        	</div>
+        </div>
+        
+    	<div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+        	<h4>Icon Badge</h4>
+            <div class="badge-type-2">
+            <p><span class="badge-data"><i class="material-icons">message</i> 23</span></p>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!--Toast Component-->
+<div class="toast-section">
+
+    <div class="row">
+        <div class="col-lg-12">
+        <h3>Toast Component</h3>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+            <h4>Toast Type 1</h4>
+                <button class="button-simple-div" onclick="myFunction1()">Show Toast</button>
+                <div id="snackbar-1">Toast Shown</div>
+        </div>
+
+        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+            <h4>Toast Type 2</h4>
+                <button class="button-simple-div" onclick="myFunction2()">Show Toast</button>
+                <div id="snackbar-2">Toast Shown</div>
+        </div>
+    </div>
+
+	<script>
+    function myFunction1() {
+        var x = document.getElementById("snackbar-1")
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+    
+	<script>
+    function myFunction2() {
+        var x = document.getElementById("snackbar-2")
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+        
+</div>
+
+<!--Tooltip Component-->
+<div class="tooltip-section">
+
+    <div class="row">
+        <div class="col-lg-12">
+        <h3>Tooltip Component</h3>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">                      
+            <div class="tooltip"><i class="material-icons">home</i>
+            <span class="tooltiptext">Home</span>
+            </div>
+        </div>
+        
+        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">                      
+            <div class="tooltip">Message
+            <span class="tooltiptext">Hello!</span>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+</div>
+
+<!--Tabs Component-->
+<div class="tabs-section">
+
+    <div class="row">
+        <div class="col-lg-12">
+        <h3>Tabs Component</h3>
+        </div>
+    </div>
+    
+    <div class="row">
+		
+      
+        <div class="col-xs">            
+        <ul class="tab">
+            <li><a href="#one" class="tablinks" onclick="openCity(event, 'London')">London</a></li>
+            <li><a href="#two" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a></li>
+            <li><a href="#three" class="tablinks" onclick="openCity(event, 'Tokyo')"><i class="material-icons">home</i> Tokyo</a></li>
+        </ul>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">            
+            <div id="London" class="tabcontent">
+              <h4>London</h4>
+              <p>London is the capital city of England.</p>
+            </div>
+            
+            <div id="Paris" class="tabcontent">
+              <h4>Paris</h4>
+              <p>Paris is the capital of France.</p>
+            </div>
+            
+            <div id="Tokyo" class="tabcontent">
+              <h4>Tokyo</h4>
+              <p>Tokyo is the capital of Japan.</p>
+            </div>
+       	</div>
+
+    </div>
+
+	<script>
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " active";
+	}
+	</script>
+        
+</div>
 
 
+<br><br><br><br><br><br><br>
 </div>    
 </body>
 

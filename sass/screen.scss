@@ -238,7 +238,7 @@ html,body{
 	}
 	
 	i {
-		margin-top: 10px;
+		margin-top: -2px;
 		color: $primary-color;
 	}
 }
@@ -280,7 +280,6 @@ html,body{
 	left: 0px;
 	background-color: white;
 	width: 100%;
-	height: 100%;
 	color: black;
 	display: none;
 	
@@ -877,4 +876,169 @@ td {
 		float: right;
 		border-radius: $border-rad;
 	}
+}
+/* **********************************************************************************************************************
+ * Badge Component
+ */
+.badge-type-1 {
+	
+	.badge-data {
+		background-color: $primary-color;
+		padding: 2px 4px;
+		color: white;
+		border-radius: $border-rad;
+	}
+}
+.badge-type-2 {
+	.badge-data {
+		background-color: $primary-color;
+		padding: 5px 3px 1px 2px;
+		color: white;
+		border-radius: $border-rad;
+	
+		.material-icons {
+			color: white;
+			font-size: 1em;
+		}
+	}
+}
+/* **********************************************************************************************************************
+ * Toast Component
+ */
+#snackbar-1 {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: white;
+    color: $primary-color;
+	border: 2px solid $primary-color;
+	text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 49%;
+    bottom: 60px;
+    font-size: 17px;
+}
+#snackbar-2 {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: $primary-color;
+	color: white;
+	border: 2px solid white;
+    text-align: center;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 49%;
+    bottom: 60px;
+    font-size: 17px;
+}
+
+.show {
+    visibility: visible !important;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 60px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 60px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 60px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 60px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+/* **********************************************************************************************************************
+ * Tooltip Component
+ */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+	padding-left: 4px;
+    background-color: white;
+	width: 120px;
+    color: $primary-color;
+    text-align: center;
+    border-radius: $border-rad;
+	border: 2px solid $primary-color;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+/* **********************************************************************************************************************
+ * Tabs Component
+ */
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-right: none;
+	background-color: white;
+	width: inherit;
+	
+	i {
+		font-size: 0.8em;
+	}
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 2px solid $primary-color;
+	border-right: none;
+}
+ul.tab li:last-child, a:last-child {
+	border-right: 2px solid $primary-color;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+	color: white;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: $primary-color;
+	color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+	padding-top: 8px;
+	padding-left: 10px;
 }
