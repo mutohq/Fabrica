@@ -11,6 +11,49 @@ function setVisibility(id, visibility) {
 document.getElementById(id).style.display = visibility;
 }
 </script>
+ <style type="text/css">
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.slideOutLeft {
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+
+}
+
+    </style>
 </head>
 
 <body>
@@ -545,12 +588,13 @@ document.getElementById(id).style.display = visibility;
     </div>
     
     <div class="row">
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div id= "type1" class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
             <h4>Type 1 Card</h4>
-            <div class="card-type-1">
+            <div  class="card-type-1">
                 <div class="card-header">
                     <span class="card-header-text">Shubham Naik
                     <i class="material-icons">home</i>
+                    <i data-id="type1" class="material-icons animate-close">close</i>
                     <i class="material-icons">link</i>
                     </span>
                 </div>
@@ -815,5 +859,24 @@ document.getElementById(id).style.display = visibility;
 <br><br><br><br><br><br><br>
 </div>    
 </body>
+    <script type="text/javascript">
+        window.addEventListener("load",function(){
+            var animate_close = document.getElementsByClassName("animate-close");
+            for(var i=0; i<animate_close.length;i++){
+                animate_close[i].addEventListener("click",function(evt){
+                    var parent = this.dataset.id;
+                    var parent_first = this.parentNode;
+                    var parent_second = parent_first.parentNode; 
+                    var parent_third = parent_second.parentNode; 
+                    var parent_forth = parent_third.parentNode; 
 
+                    parent_forth.className += " animated slideOutLeft";
+                    setTimeout( 
+                        function(){parent_forth.style.display = "none";}
+                        ,850);
+                })
+            }
+        });
+    </script>
+   
 </html>
