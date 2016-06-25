@@ -7,8 +7,9 @@
 /* *********************************************************************************************************************
  * Variables
  */
-
-$primary-color: #29B6F6;
+ /*29b6f6*/
+$saturation: 80%;
+$primary-color: #29b6f6;
 $border-rad: 4px;
 $image-text-color: white;
 $video-text-color: white;
@@ -120,23 +121,11 @@ html,body{
  */
 .typography-section {
 	
-	code {
-		background-color: grey;
-		padding:  2px;
-		font-size: 16px;
-		border: 1px solid grey;
-		color: white;
+	.code-div {
 		float: right;
-		border-radius: $border-rad;
+		padding-right: 2px;
+		padding-left: 2px;
 	}
-}
-.sample-code {
-  background-color: #F5F5F5;
-  padding: 20px;
-  font-size: 16px;
-  border: 1px solid grey;
-  color: grey;
-  border-radius: 4px;
 }
 /* **********************************************************************************************************************
  * Text Data Component
@@ -1050,4 +1039,48 @@ ul.tab li a:focus, .active {
 	background-color: #f1f1f1;
 	overflow-x: auto;
 	border: 2px solid $primary-color;
+}
+/* **********************************************************************************************************************
+ * Colours Component
+ */
+$hues: (primary: $primary-color, secondary: $primary-color + #00ff00, tertiary: $primary-color + #ff0000);
+$palettes: ();
+@function palette($name, $tint:'base') {
+  @return map-get(map-get($palettes, $name), $tint);
+}
+
+@each $name,
+$primary-color in $hues {
+  $palettes: map-merge($palettes, ($name: ( lightest: change-color($primary-color, $lightness: 95%, $saturation: $saturation), lighter: change-color($primary-color, $lightness: 85%, $saturation: $saturation), light: change-color($primary-color, $lightness: 65%, $saturation: $saturation), base: change-color($primary-color, $lightness: 50%, $saturation: $saturation), dark: change-color($primary-color, $lightness: 35%, $saturation: $saturation), darker: change-color($primary-color, $lightness: 15%, $saturation: $saturation), darkest: change-color($primary-color, $lightness: 5%, $saturation: $saturation))));
+  .#{$name}-lightest {
+    background-color: palette($name, lightest);
+  }
+  .#{$name}-lighter {
+    background-color: palette($name, lighter);
+  }
+  .#{$name}-light {
+    background-color: palette($name, light);
+  }
+  .#{$name}-base {
+    background-color: palette($name);
+  }
+  .#{$name}-dark {
+    background-color: palette($name, dark);
+  }
+  .#{$name}-darker {
+    background-color: palette($name, darker);
+  }
+  .#{$name}-darkest {
+    background-color: palette($name, darkest);
+  }
+}
+.palette {
+	h4 {
+		text-align: center;
+	}
+}
+.color-div {
+	height: 50px;
+	border: 2px solid grey;
+	margin: 2px;
 }
