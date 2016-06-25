@@ -13,6 +13,64 @@ function setVisibility(id, visibility) {
 document.getElementById(id).style.display = visibility;
 }
 </script>
+ <style type="text/css">
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.tabcontent {
+    -webkit-animation: fadeEffect 1.5s;
+    animation: fadeEffect 1.5s; 
+}
+
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.slideOutLeft {
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+
+}
+</style>
+
 </head>
 
 <body>
@@ -547,12 +605,13 @@ document.getElementById(id).style.display = visibility;
     </div>
     
     <div class="row">
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div id= "type1" class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
             <h4>Type 1 Card</h4>
-            <div class="card-type-1">
+            <div  class="card-type-1">
                 <div class="card-header">
                     <span class="card-header-text">Shubham Naik
                     <i class="material-icons">home</i>
+                    <i data-id="type1" class="material-icons animate-close">close</i>
                     <i class="material-icons">link</i>
                     </span>
                 </div>
@@ -818,7 +877,7 @@ document.getElementById(id).style.display = visibility;
 	
     <div class="row">
         <div class="col-lg-12">
-        <h3>Code Component</h3>
+        <h3>Color Palette Component</h3>
         </div>
     </div>
     
@@ -862,9 +921,122 @@ document.getElementById(id).style.display = visibility;
 </div>
 
 
+<!--Progress Bar-->
+<div class="progress-bar-section">
+	
+    <div class="row">
+        <div class="col-lg-12">
+        <h3>Progress Bar Component</h3>
+        </div>
+    </div>
+    
+    <div class="row">    
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-9">
+        <div class="progress-bar-1">
+  			<progress id="pold" value="40" max="100"}>
+            	<div pseudo="-webkit-progress-inner-element">
+                	<div pseudo="-webkit-progress-bar">
+                    	<div pseudo="-webkit-progress-value">
+                    	</div>
+                    </div>
+                </div>
+            </progress>
+        </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <button class="button-color-div" onClick="progress()">Start</button>
+            <button class="button-simple-div" onClick="degress()">Reset</button>
+    	</div>
+    </div>
+     
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <h4>Progress Bar Type 1</h4>
+        <div class="progress-bar-1">
+  			<progress id="pold" value="40" max="100"}>
+            	<div pseudo="-webkit-progress-inner-element">
+                	<div pseudo="-webkit-progress-bar">
+                    	<div pseudo="-webkit-progress-value">
+                    	</div>
+                    </div>
+                </div>
+            </progress>
+        </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <h4>Progress Bar Type 2</h4>
+        <div class="progress-bar-2">
+  			<progress id="pold" value="40" max="100"}>
+            	<div pseudo="-webkit-progress-inner-element">
+                	<div pseudo="-webkit-progress-bar">
+                    	<div pseudo="-webkit-progress-value">
+                    	</div>
+                    </div>
+                </div>
+            </progress>
+        </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+		function inc(){
+			var bar = document.getElementById("pbar");
+			for(var i=0; i<=100; i=i+1){
+				bar.style.width = i+"%";
+				document.getElementById("status").innerHTML= i +"% complete";
+			}
+		}
+		function dec() {
+			var bar = document.getElementById("pbar");
+			bar.style.width = "0%";
+		}
+		function degress() {
+			var bar = document.getElementById("pold");
+				bar.value = 0;
+		}
+		function progress() {
+		var bar = document.getElementById("pold");
+		var id = setInterval(frame, 10);
+    	var width=1;
+    	function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++;
+            bar.value = width ;
+        }
+    }
+   }
+	</script>
+
+</div>
+        
+    
+    
 
 <br><br><br><br><br><br><br>
 </div>    
 </body>
+    <script type="text/javascript">
+        window.addEventListener("load",function(){
+            var animate_close = document.getElementsByClassName("animate-close");
+            for(var i=0; i<animate_close.length;i++){
+                animate_close[i].addEventListener("click",function(evt){
+                    var parent = this.dataset.id;
+                    var parent_first = this.parentNode;
+                    var parent_second = parent_first.parentNode; 
+                    var parent_third = parent_second.parentNode; 
+                    var parent_forth = parent_third.parentNode; 
 
+                    parent_forth.className += " animated slideOutLeft";
+                    setTimeout( 
+                        function(){parent_forth.style.display = "none";}
+                        ,850);
+                })
+            }
+        });
+    </script>
+   
 </html>

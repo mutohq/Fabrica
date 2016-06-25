@@ -1,0 +1,32 @@
+server {
+      
+  
+      root /var/www/Fabrica/;
+#      index index.html index.htm;
+      listen 80;
+      client_max_body_size 10G;
+      server_name fabrica.mutohq.com;
+      
+      location /{
+          try_files $uri $uri.html $uri/ /index.html;
+      }   
+      location /assets/ {
+          try_files $uri $uri.html $uri/ /index.html;
+      }   
+      location /assets/css/ {
+          try_files $uri $uri.css $uri/ /styles.css;
+      }   
+      location /assets/js/ {
+          try_files $uri $uri.js $uri/ /index.js;
+      }   
+      location /assets/images/ {
+          try_files $uri $uri.jpg $uri.png $uri/ ;
+      }
+      location /assets/videos/ {
+          try_files $uri $uri.html $uri/ /assets/videos/index.html;
+      }
+      location /lib/ {
+          try_files $uri $uri.html $uri/ /index.html;
+      }   
+   
+  }
