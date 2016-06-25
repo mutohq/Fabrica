@@ -6,6 +6,8 @@
 <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
 <link rel="stylesheet" type="text/css" href="stylesheets/flexboxgrid.css">
 <link rel="stylesheet" href="icons/material-icons.css">
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <script language="JavaScript">
 function setVisibility(id, visibility) {
 document.getElementById(id).style.display = visibility;
@@ -91,7 +93,7 @@ document.getElementById(id).style.display = visibility;
 	</div>
     </div>
     
-    <div id="menu" class="menucontent">
+    <div id="menu" class="menucontent col-xs-8 col-sm-6 col-md-4 col-lg-4">
     <div class="container-fluid">
     
         <div class="row">
@@ -103,7 +105,7 @@ document.getElementById(id).style.display = visibility;
         </div>
 
         <div class="row">
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xs-offset-1">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xs-offset-12">
                 <h3><button class="round-button-div small-round-button"><i class="material-icons">home</i></button>Main Title</h3>
                 <ul style="list-style-type:none">
                   <li><i class="material-icons">filter_1</i>Option 1</li>
@@ -111,7 +113,7 @@ document.getElementById(id).style.display = visibility;
                   <li><i class="material-icons">filter_3</i>Option 3</li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="image-c large">
                     <div class="image-overlay">
                         <span class="image-text">Image.jpg
@@ -280,20 +282,20 @@ document.getElementById(id).style.display = visibility;
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <h1>Standard Headings</h1>
-            <h1>Typography&nbsp;<code>&lt;h1&gt;</code></h1>
-            <h2>Typography&nbsp;<code>&lt;h2&gt;</code></h2>
-            <h3>Typography&nbsp;<code>&lt;h3&gt;</code></h3>
-            <h4>Typography&nbsp;<code>&lt;h4&gt;</code></h4>
-            <h5>Typography&nbsp;<code>&lt;h5&gt;</code></h5>
-            <h6>Typography&nbsp;<code>&lt;h6&gt;</code></h6>
+            <div class="code-div"><xmp><h1></xmp></div><h1>Typography&nbsp;</h1><br>
+            <div class="code-div"><xmp><h2></xmp></div><h2>Typography&nbsp;</h2><br>
+            <div class="code-div"><xmp><h3></xmp></div><h3>Typography&nbsp;</h3><br>
+            <div class="code-div"><xmp><h4></xmp></div><h4>Typography&nbsp;</h4><br>
+            <div class="code-div"><xmp><h5></xmp></div><h5>Typography&nbsp;</h5><br>
+            <div class="code-div"><xmp><h6></xmp></div><h6>Typography&nbsp;</h6>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
             <h1>Styled Types</h1>
-            <p>Basic Type&nbsp;<code>&lt;p&gt;</code></p>
-            <p><strong>Bolded</strong>&nbsp;<code>&lt;strong&gt;</code></p>
-            <p><em>Italicized</em>&nbsp;<code>&lt;em&gt;</code></p>
-            <p><u>Underlined</u>&nbsp;<code>&lt;u&gt;</code></p>
+            <div class="code-div"><xmp><p></xmp></div><p>Basic Type&nbsp;</p><br>
+            <div class="code-div"><xmp><strong></xmp></div><p><strong>Bolded</strong></p><br>
+            <div class="code-div"><xmp><em></xmp></div><p><em>Italicized</em></p><br>
+            <div class="code-div"><xmp><u></xmp></div><p><u>Underlined</u></p>
         </div>
     </div>
 
@@ -396,7 +398,7 @@ document.getElementById(id).style.display = visibility;
             <video controls class="video-div">
                 <source src="videos/video_1.mp4" type="video/mp4">
             </video>
-            <div class="video-footer">
+            <div class="video-footer secondary-base">
                     <span class="video-text">Video.mp4
                     </span>
             </div>
@@ -840,7 +842,7 @@ document.getElementById(id).style.display = visibility;
         
 </div>
 
-<!--Tabs Component-->
+<!--Code Component-->
 <div class="code-section">
 
     <div class="row">
@@ -869,6 +871,55 @@ document.getElementById(id).style.display = visibility;
     </div>
 
 </div>
+
+<!--Colour Palett-->
+<div class="color-palette-section">
+	
+    <div class="row">
+        <div class="col-lg-12">
+        <h3>Code Component</h3>
+        </div>
+    </div>
+    
+    <div class="row">    
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">    
+            <div class="palette">
+            <div class="color-div primary-lightest"></div><h4>primary-lightest</h4>
+            <div class="color-div primary-lighter"></div><h4>primary-lighter</h4>
+            <div class="color-div primary-light"></div><h4>primary-light</h4>
+            <div class="color-div primary-base"></div><h4>primary-base</h4>
+            <div class="color-div primary-dark"></div><h4>primary-dark</h4>
+            <div class="color-div primary-darker"></div><h4>primary-darker</h4>
+            <div class="color-div primary-darkest"></div><h4>primary-darkest</h4>
+            </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">    
+            <div class="palette">
+            <div class="color-div secondary-lightest"></div><h4>secondary-lightest</h4>
+            <div class="color-div secondary-lighter"></div><h4>secondary-lighter</h4>
+            <div class="color-div secondary-light"></div><h4>secondary-light</h4>
+            <div class="color-div secondary-base"></div><h4>secondary-base</h4>
+            <div class="color-div secondary-dark"></div><h4>secondary-dark</h4>
+            <div class="color-div secondary-darker"></div><h4>secondary-darker</h4>
+            <div class="color-div secondary-darkest"></div><h4>secondary-darkest</h4>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">    
+            <div class="palette">
+            <div class="color-div tertiary-lightest"></div><h4>tertiary-lightest</h4>
+            <div class="color-div tertiary-lighter"></div><h4>tertiary-lighter</h4>
+            <div class="color-div tertiary-light"></div><h4>tertiary-light</h4>
+            <div class="color-div tertiary-base"></div><h4>tertiary-base</h4>
+            <div class="color-div tertiary-dark"></div><h4>tertiary-dark</h4>
+            <div class="color-div tertiary-darker"></div><h4>tertiary-darker</h4>
+            <div class="color-div tertiary-darkest"></div><h4>tertiary-darkest</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 <br><br><br><br><br><br><br>
