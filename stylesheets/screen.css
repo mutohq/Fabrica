@@ -74,7 +74,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* *********************************************************************************************************************
  * Default CSS Properties
  */
-/* line 21, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 h1 {
   display: block;
   font-size: 2em;
@@ -85,7 +85,7 @@ h1 {
   font-weight: bold;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 h2 {
   display: block;
   font-size: 1.5em;
@@ -96,7 +96,7 @@ h2 {
   font-weight: bold;
 }
 
-/* line 39, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 h3 {
   display: block;
   font-size: 1.17em;
@@ -107,7 +107,7 @@ h3 {
   font-weight: bold;
 }
 
-/* line 48, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 h4 {
   display: block;
   margin-top: 1.33em;
@@ -117,7 +117,7 @@ h4 {
   font-weight: bold;
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 h5 {
   display: block;
   font-size: .83em;
@@ -128,7 +128,7 @@ h5 {
   font-weight: bold;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 h6 {
   display: block;
   font-size: .67em;
@@ -139,7 +139,7 @@ h6 {
   font-weight: bold;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 p {
   font-style: normal;
   display: block;
@@ -149,12 +149,12 @@ p {
   margin-right: 0;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 em {
   font-style: italic;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 strong {
   font-weight: bold;
 }
@@ -162,7 +162,7 @@ strong {
 /* **********************************************************************************************************************
  * Grid Styling
  */
-/* line 92, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .grid-system-section .box {
   text-align: center;
   border: 2px solid black;
@@ -171,29 +171,29 @@ strong {
 /* **********************************************************************************************************************
  * Grid Block Size
  */
-/* line 100, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 html, body {
   height: 100%;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .grid-size-section .box {
   text-align: center;
   border: 2px solid black;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 [class*="small"] {
   height: 100px;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 [class*="medium"] {
   height: 200px;
 }
 
-/* line 116, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 [class*="large"] {
   height: 300px;
 }
@@ -201,7 +201,7 @@ html, body {
 /* **********************************************************************************************************************
  * Typography
  */
-/* line 124, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 .typography-section .code-div {
   float: right;
   padding-right: 2px;
@@ -211,24 +211,24 @@ html, body {
 /* **********************************************************************************************************************
  * Text Data Component
  */
-/* line 134, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .data {
   height: 100%;
   width: 100%;
 }
-/* line 138, ../sass/screen.scss */
+/* line 140, ../sass/screen.scss */
 .data .data-indicator {
   height: 45px;
   width: 5px;
   background-color: #29b6f6;
 }
-/* line 143, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 .data .data-heading {
   margin-left: 15px;
   margin-top: -30px;
   font-size: 20px;
 }
-/* line 148, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .data .data-text {
   font-size: 16px;
   margin-left: 15px;
@@ -241,19 +241,18 @@ html, body {
 /* **********************************************************************************************************************
  * Image Component
  */
-/* line 161, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 [class*="image-c"] {
   box-shadow: 2px 2px 10px grey;
-  background: url(../images/image_1.png) center/cover;
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 [class*="image-c"] .image-overlay {
   height: 50px;
   background: rgba(0, 0, 0, 0.2);
 }
-/* line 173, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 [class*="image-c"] .image-text {
   color: white;
   font-size: 16px;
@@ -268,19 +267,19 @@ html, body {
 /* **********************************************************************************************************************
  * Video Component
  */
-/* line 187, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .video-div {
   width: 100%;
   z-index: auto;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 192, ../sass/screen.scss */
 .video-footer {
   background-color: #29b6f6;
   height: 40px;
   margin-top: -4px;
 }
-/* line 196, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .video-footer .video-text {
   color: white;
   font-size: 16px;
@@ -295,7 +294,7 @@ html, body {
 /* **********************************************************************************************************************
  * Footer
  */
-/* line 210, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .footer {
   position: fixed;
   background-color: white;
@@ -305,17 +304,17 @@ html, body {
   bottom: 0px;
   text-align: center;
 }
-/* line 219, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .footer a {
   text-decoration: none;
   color: black;
 }
-/* line 224, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .footer p {
   margin-top: -5px;
   font-size: 12px;
 }
-/* line 229, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .footer i {
   margin-top: -2px;
   color: #29b6f6;
@@ -325,7 +324,7 @@ html, body {
  * Header
  */
 /************************** Header **************************/
-/* line 238, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 .header {
   position: fixed;
   background-color: white;
@@ -334,7 +333,7 @@ html, body {
   border-bottom: 2px solid #29b6f6;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 .header-title {
   position: fixed;
   text-align: center;
@@ -343,7 +342,7 @@ html, body {
 }
 
 /************************** Menu Button **************************/
-/* line 252, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .menushow {
   text-decoration: none;
   display: inline-block;
@@ -354,13 +353,13 @@ html, body {
   height: 50px;
   position: fixed;
 }
-/* line 262, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .menushow i {
   margin-top: 12px;
 }
 
 /************************** Menu Content **************************/
-/* line 267, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .menucontent {
   position: fixed;
   left: 0px;
@@ -370,26 +369,26 @@ html, body {
   color: black;
   display: none;
 }
-/* line 276, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .menucontent .onerow {
   padding-bottom: 10px;
 }
-/* line 280, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .menucontent ul {
   margin-left: 60px;
 }
-/* line 283, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .menucontent ul li {
   padding: 6px;
   font-size: 18px;
 }
-/* line 287, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 .menucontent ul li i {
   color: #29b6f6;
   margin-right: 10px;
 }
 
-/* line 294, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .menuhide {
   text-decoration: none;
   display: inline-block;
@@ -405,12 +404,12 @@ html, body {
  * Form Component
  */
 /************************** Button **************************/
-/* line 308, ../sass/screen.scss */
+/* line 309, ../sass/screen.scss */
 .button-div {
   padding: 4px;
 }
 
-/* line 311, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 .button-simple-div {
   text-align: center;
   background-color: white;
@@ -424,12 +423,12 @@ html, body {
   border-radius: 4px;
   outline: none;
 }
-/* line 324, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 .button-simple-div:hover {
   opacity: 0.5;
 }
 
-/* line 328, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 .button-color-div {
   text-align: center;
   background-color: #29b6f6;
@@ -443,13 +442,13 @@ html, body {
   border-radius: 4px;
   outline: none;
 }
-/* line 341, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 .button-color-div:hover {
   opacity: 0.5;
   border: 2px solid #29b6f6;
 }
 
-/* line 346, ../sass/screen.scss */
+/* line 347, ../sass/screen.scss */
 .round-button-div {
   text-align: center;
   background-color: #29b6f6;
@@ -465,68 +464,68 @@ html, body {
   outline: none;
   box-shadow: 1px 1px 10px grey;
 }
-/* line 361, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 .round-button-div i {
   padding-top: 5px;
 }
-/* line 365, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
 .round-button-div:hover {
   opacity: 0.5;
   border: 2px solid #29b6f6;
 }
 
-/* line 370, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .small-round-button {
   height: 40px;
   width: 40px;
   margin-right: 10px;
 }
-/* line 375, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 .small-round-button i {
   padding-top: 3px;
   padding-left: -1px;
 }
 
-/* line 380, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 .medium-round-button {
   height: 45px;
   width: 45px;
   margin-right: 10px;
 }
-/* line 385, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .medium-round-button i {
   padding-top: 2px;
 }
 
-/* line 389, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 .large-round-button {
   height: 55px;
   width: 55px;
   margin-right: 10px;
 }
-/* line 394, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 .large-round-button i {
   padding-top: 2px;
 }
 
 /************************** Checkbox **************************/
-/* line 399, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .checkbox-div {
   padding-bottom: 2px;
   padding: 4px;
 }
 
-/* line 403, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 input[type="checkbox"] {
   display: none;
 }
 
-/* line 406, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 label {
   cursor: pointer;
 }
 
-/* line 409, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 input[type="checkbox"] + label:before {
   border: 2px solid grey;
   content: "\00a0";
@@ -538,7 +537,7 @@ input[type="checkbox"] + label:before {
   width: 16px;
 }
 
-/* line 419, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 input[type="checkbox"]:checked + label:before {
   opacity: 0.7;
   color: #29b6f6;
@@ -547,29 +546,29 @@ input[type="checkbox"]:checked + label:before {
   border: 2px solid #29b6f6;
 }
 
-/* line 426, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 input[type="checkbox"]:checked + label:after {
   font-weight: bold;
 }
 
 /************************** Radio Button **************************/
-/* line 430, ../sass/screen.scss */
+/* line 431, ../sass/screen.scss */
 .radio-div {
   padding-bottom: 2px;
   padding: 4px;
 }
 
-/* line 434, ../sass/screen.scss */
+/* line 435, ../sass/screen.scss */
 input[type="radio"] {
   display: none;
 }
 
-/* line 437, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 label {
   cursor: pointer;
 }
 
-/* line 440, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 input[type="radio"] + label:before {
   border: 2px solid grey;
   content: "\00a0";
@@ -583,7 +582,7 @@ input[type="radio"] + label:before {
   border-radius: 4px;
 }
 
-/* line 452, ../sass/screen.scss */
+/* line 453, ../sass/screen.scss */
 input[type="radio"]:checked + label:before {
   opacity: 0.7;
   color: #29b6f6;
@@ -592,22 +591,22 @@ input[type="radio"]:checked + label:before {
   border: 2px solid #29b6f6;
 }
 
-/* line 459, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 input[type="radio"]:checked + label:after {
   font-weight: bold;
 }
 
 /************************** Simple Input **************************/
-/* line 463, ../sass/screen.scss */
+/* line 464, ../sass/screen.scss */
 :webkit-textarea-placeholder {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 
-/* line 466, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 .text-form-div {
   margin: 4px 4px;
 }
-/* line 469, ../sass/screen.scss */
+/* line 470, ../sass/screen.scss */
 .text-form-div .text-form-input {
   border: 2px solid grey;
   height: 30px;
@@ -617,7 +616,7 @@ input[type="radio"]:checked + label:after {
   outline: none;
   width: 100%;
 }
-/* line 478, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 .text-form-div .text-form-input:hover {
   border: 2px solid #29b6f6;
   border-radius: 4px;
@@ -626,12 +625,12 @@ input[type="radio"]:checked + label:after {
 }
 
 /************************** Textarea Input **************************/
-/* line 488, ../sass/screen.scss */
+/* line 489, ../sass/screen.scss */
 .textarea-div {
   margin: 4px 4px;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
-/* line 492, ../sass/screen.scss */
+/* line 493, ../sass/screen.scss */
 .textarea-div .textarea-data {
   border: 2px solid grey;
   border-radius: 4px;
@@ -640,7 +639,7 @@ input[type="radio"]:checked + label:after {
   outline: none;
   width: 100%;
 }
-/* line 500, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 .textarea-div .textarea-data:hover {
   border: 2px solid #29b6f6;
   border-radius: 4px;
@@ -649,12 +648,12 @@ input[type="radio"]:checked + label:after {
 }
 
 /************************** Dropdown Input **************************/
-/* line 509, ../sass/screen.scss */
+/* line 510, ../sass/screen.scss */
 .dropdown-div {
   margin: 4px 4px;
   width: 100.75%;
 }
-/* line 513, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 .dropdown-div .dropdown-options {
   border: 2px solid grey;
   height: 40px;
@@ -663,7 +662,7 @@ input[type="radio"]:checked + label:after {
   outline: none;
   width: 100%;
 }
-/* line 521, ../sass/screen.scss */
+/* line 522, ../sass/screen.scss */
 .dropdown-div .dropdown-options:hover {
   border: 2px solid #29b6f6;
 }
@@ -671,7 +670,7 @@ input[type="radio"]:checked + label:after {
 /* **********************************************************************************************************************
  * Tables
  */
-/* line 530, ../sass/screen.scss */
+/* line 531, ../sass/screen.scss */
 table {
   width: 100%;
   overflow-x: auto;
@@ -680,7 +679,7 @@ table {
   display: block;
 }
 
-/* line 537, ../sass/screen.scss */
+/* line 538, ../sass/screen.scss */
 th {
   font-size: large;
   padding-top: 10px;
@@ -690,7 +689,7 @@ th {
   border-bottom: 2px solid #29b6f6;
 }
 
-/* line 545, ../sass/screen.scss */
+/* line 546, ../sass/screen.scss */
 td {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -701,18 +700,18 @@ td {
 /* **********************************************************************************************************************
  * Scroll Bar
  */
-/* line 554, ../sass/screen.scss */
+/* line 555, ../sass/screen.scss */
 ::-webkit-scrollbar {
   height: 4px;
   width: 4px;
 }
 
-/* line 559, ../sass/screen.scss */
+/* line 560, ../sass/screen.scss */
 ::-webkit-scrollbar-track {
   background: none;
 }
 
-/* line 563, ../sass/screen.scss */
+/* line 564, ../sass/screen.scss */
 ::-webkit-scrollbar-thumb {
   background: #29b6f6;
   border-radius: 4px;
@@ -721,20 +720,20 @@ td {
 /* **********************************************************************************************************************
  * Card Component
  */
-/* line 570, ../sass/screen.scss */
+/* line 571, ../sass/screen.scss */
 [class*="card-type"] {
   box-shadow: 2px 2px 10px grey;
   margin-bottom: 10px;
 }
 
-/* line 574, ../sass/screen.scss */
+/* line 575, ../sass/screen.scss */
 [class*="card-image"] {
   background: url(../images/image_1.png) center/cover;
   width: 100%;
 }
 
 /************************** Card Type 1 **************************/
-/* line 581, ../sass/screen.scss */
+/* line 582, ../sass/screen.scss */
 .card-type-1 .card-text {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -743,7 +742,7 @@ td {
   margin-bottom: 5px;
   text-indent: 5%;
 }
-/* line 590, ../sass/screen.scss */
+/* line 591, ../sass/screen.scss */
 .card-type-1 .card-text-heading {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -752,12 +751,12 @@ td {
   margin-bottom: 5px;
   color: #29b6f6;
 }
-/* line 599, ../sass/screen.scss */
+/* line 600, ../sass/screen.scss */
 .card-type-1 .card-header {
   background-color: #29b6f6;
   height: 40px;
 }
-/* line 603, ../sass/screen.scss */
+/* line 604, ../sass/screen.scss */
 .card-type-1 .card-header .card-header-text {
   color: white;
   font-size: 16px;
@@ -769,18 +768,18 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 615, ../sass/screen.scss */
+/* line 616, ../sass/screen.scss */
 .card-type-1 .card-header i {
   margin-top: 8px;
   margin-right: 20px;
   float: right;
 }
-/* line 621, ../sass/screen.scss */
+/* line 622, ../sass/screen.scss */
 .card-type-1 .card-footer {
   background-color: #29b6f6;
   height: 40px;
 }
-/* line 625, ../sass/screen.scss */
+/* line 626, ../sass/screen.scss */
 .card-type-1 .card-footer .card-footer-text {
   color: white;
   font-size: 16px;
@@ -791,7 +790,7 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 636, ../sass/screen.scss */
+/* line 637, ../sass/screen.scss */
 .card-type-1 .card-button-simple-div {
   text-align: center;
   background-color: #29b6f6;
@@ -807,7 +806,7 @@ td {
 }
 
 /************************** Card Type 2 **************************/
-/* line 653, ../sass/screen.scss */
+/* line 654, ../sass/screen.scss */
 .card-type-2 .card-text {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -816,7 +815,7 @@ td {
   margin-bottom: 5px;
   text-indent: 5%;
 }
-/* line 662, ../sass/screen.scss */
+/* line 663, ../sass/screen.scss */
 .card-type-2 .card-text-heading {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -825,12 +824,12 @@ td {
   margin-bottom: 5px;
   color: #29b6f6;
 }
-/* line 671, ../sass/screen.scss */
+/* line 672, ../sass/screen.scss */
 .card-type-2 .card-header {
   background-color: white;
   height: 40px;
 }
-/* line 675, ../sass/screen.scss */
+/* line 676, ../sass/screen.scss */
 .card-type-2 .card-header .card-header-text {
   color: #29b6f6;
   font-size: 16px;
@@ -842,19 +841,19 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 687, ../sass/screen.scss */
+/* line 688, ../sass/screen.scss */
 .card-type-2 .card-header i {
   margin-top: 8px;
   margin-right: 20px;
   float: right;
 }
-/* line 693, ../sass/screen.scss */
+/* line 694, ../sass/screen.scss */
 .card-type-2 .card-footer {
   background-color: white;
   height: 40px;
   border-top: 2px solid #29b6f6;
 }
-/* line 698, ../sass/screen.scss */
+/* line 699, ../sass/screen.scss */
 .card-type-2 .card-footer .card-footer-text {
   color: white;
   font-size: 16px;
@@ -865,7 +864,7 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 709, ../sass/screen.scss */
+/* line 710, ../sass/screen.scss */
 .card-type-2 .card-button-simple-div {
   text-align: center;
   background-color: white;
@@ -881,7 +880,7 @@ td {
 }
 
 /************************** Card Type 3 **************************/
-/* line 726, ../sass/screen.scss */
+/* line 727, ../sass/screen.scss */
 .card-type-3 .card-text {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -890,7 +889,7 @@ td {
   margin-bottom: 5px;
   text-indent: 5%;
 }
-/* line 735, ../sass/screen.scss */
+/* line 736, ../sass/screen.scss */
 .card-type-3 .card-text-heading {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -899,12 +898,12 @@ td {
   color: #29b6f6;
   padding-top: 10px;
 }
-/* line 744, ../sass/screen.scss */
+/* line 745, ../sass/screen.scss */
 .card-type-3 .card-header {
   background-color: white;
   height: 40px;
 }
-/* line 748, ../sass/screen.scss */
+/* line 749, ../sass/screen.scss */
 .card-type-3 .card-header .card-header-text {
   color: #29b6f6;
   font-size: 16px;
@@ -916,19 +915,19 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 760, ../sass/screen.scss */
+/* line 761, ../sass/screen.scss */
 .card-type-3 .card-header i {
   margin-top: 8px;
   margin-right: 20px;
   float: right;
 }
-/* line 766, ../sass/screen.scss */
+/* line 767, ../sass/screen.scss */
 .card-type-3 .card-footer {
   background-color: #29b6f6;
   height: 40px;
   border-top: 2px solid white;
 }
-/* line 771, ../sass/screen.scss */
+/* line 772, ../sass/screen.scss */
 .card-type-3 .card-footer .card-footer-text {
   color: white;
   font-size: 16px;
@@ -939,7 +938,7 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 783, ../sass/screen.scss */
+/* line 784, ../sass/screen.scss */
 .card-type-3 .card-button-simple-div {
   text-align: center;
   background-color: #29b6f6;
@@ -955,7 +954,7 @@ td {
 }
 
 /************************** Card Type 4 **************************/
-/* line 800, ../sass/screen.scss */
+/* line 801, ../sass/screen.scss */
 .card-type-4 .card-text {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -964,7 +963,7 @@ td {
   margin-bottom: 5px;
   text-indent: 5%;
 }
-/* line 809, ../sass/screen.scss */
+/* line 810, ../sass/screen.scss */
 .card-type-4 .card-text-heading {
   font: "Trebuchet MS", Arial, Helvetica, sans-serif;
   margin-left: 10px;
@@ -973,12 +972,12 @@ td {
   color: #29b6f6;
   padding-top: 10px;
 }
-/* line 818, ../sass/screen.scss */
+/* line 819, ../sass/screen.scss */
 .card-type-4 .card-header {
   background-color: white;
   height: 40px;
 }
-/* line 822, ../sass/screen.scss */
+/* line 823, ../sass/screen.scss */
 .card-type-4 .card-header .card-header-text {
   color: #29b6f6;
   font-size: 16px;
@@ -990,19 +989,19 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 834, ../sass/screen.scss */
+/* line 835, ../sass/screen.scss */
 .card-type-4 .card-header i {
   margin-top: 8px;
   margin-right: 20px;
   float: right;
 }
-/* line 840, ../sass/screen.scss */
+/* line 841, ../sass/screen.scss */
 .card-type-4 .card-footer {
   background-color: white;
   height: 40px;
   border-top: 2px solid #29b6f6;
 }
-/* line 845, ../sass/screen.scss */
+/* line 846, ../sass/screen.scss */
 .card-type-4 .card-footer .card-footer-text {
   color: white;
   font-size: 16px;
@@ -1013,7 +1012,7 @@ td {
   line-height: 45px;
   width: 100%;
 }
-/* line 856, ../sass/screen.scss */
+/* line 857, ../sass/screen.scss */
 .card-type-4 .card-button-simple-div {
   text-align: center;
   background-color: white;
@@ -1031,7 +1030,7 @@ td {
 /* **********************************************************************************************************************
  * Badge Component
  */
-/* line 875, ../sass/screen.scss */
+/* line 876, ../sass/screen.scss */
 .badge-type-1 .badge-data {
   background-color: #29b6f6;
   padding: 2px 4px;
@@ -1039,14 +1038,14 @@ td {
   border-radius: 4px;
 }
 
-/* line 883, ../sass/screen.scss */
+/* line 884, ../sass/screen.scss */
 .badge-type-2 .badge-data {
   background-color: #29b6f6;
   padding: 5px 3px 1px 2px;
   color: white;
   border-radius: 4px;
 }
-/* line 889, ../sass/screen.scss */
+/* line 890, ../sass/screen.scss */
 .badge-type-2 .badge-data .material-icons {
   color: white;
   font-size: 1em;
@@ -1055,7 +1054,7 @@ td {
 /* **********************************************************************************************************************
  * Toast Component
  */
-/* line 898, ../sass/screen.scss */
+/* line 899, ../sass/screen.scss */
 #snackbar-1 {
   visibility: hidden;
   min-width: 250px;
@@ -1073,7 +1072,7 @@ td {
   font-size: 17px;
 }
 
-/* line 914, ../sass/screen.scss */
+/* line 915, ../sass/screen.scss */
 #snackbar-2 {
   visibility: hidden;
   min-width: 250px;
@@ -1090,7 +1089,7 @@ td {
   font-size: 17px;
 }
 
-/* line 930, ../sass/screen.scss */
+/* line 931, ../sass/screen.scss */
 .show {
   visibility: visible !important;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -1140,13 +1139,13 @@ td {
 /* **********************************************************************************************************************
  * Tooltip Component
  */
-/* line 958, ../sass/screen.scss */
+/* line 959, ../sass/screen.scss */
 .tooltip {
   position: relative;
   display: inline-block;
 }
 
-/* line 963, ../sass/screen.scss */
+/* line 964, ../sass/screen.scss */
 .tooltip .tooltiptext {
   visibility: hidden;
   padding-left: 4px;
@@ -1157,12 +1156,13 @@ td {
   border-radius: 4px;
   border: 2px solid #29b6f6;
   padding: 5px 0;
+  margin-top: 4px;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
 }
 
-/* line 979, ../sass/screen.scss */
+/* line 981, ../sass/screen.scss */
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
@@ -1170,7 +1170,7 @@ td {
 /* **********************************************************************************************************************
  * Tabs Component
  */
-/* line 985, ../sass/screen.scss */
+/* line 987, ../sass/screen.scss */
 ul.tab {
   list-style-type: none;
   margin: 0;
@@ -1180,19 +1180,19 @@ ul.tab {
   background-color: white;
   width: inherit;
 }
-/* line 994, ../sass/screen.scss */
+/* line 996, ../sass/screen.scss */
 ul.tab i {
   font-size: 0.8em;
 }
 
 /* Float the list items side by side */
-/* line 1000, ../sass/screen.scss */
+/* line 1002, ../sass/screen.scss */
 ul.tab li {
   float: left;
 }
 
 /* Style the links inside the list items */
-/* line 1003, ../sass/screen.scss */
+/* line 1005, ../sass/screen.scss */
 ul.tab li a {
   display: inline-block;
   color: black;
@@ -1204,27 +1204,27 @@ ul.tab li a {
   border-right: none;
 }
 
-/* line 1013, ../sass/screen.scss */
+/* line 1015, ../sass/screen.scss */
 ul.tab li:last-child, a:last-child {
   border-right: 2px solid #29b6f6;
 }
 
 /* Change background color of links on hover */
-/* line 1018, ../sass/screen.scss */
+/* line 1020, ../sass/screen.scss */
 ul.tab li a:hover {
   background-color: #ddd;
   color: white;
 }
 
 /* Create an active/current tablink class */
-/* line 1024, ../sass/screen.scss */
+/* line 1026, ../sass/screen.scss */
 ul.tab li a:focus, .active {
   background-color: #29b6f6;
   color: white;
 }
 
 /* Style the tab content */
-/* line 1030, ../sass/screen.scss */
+/* line 1032, ../sass/screen.scss */
 .tabcontent {
   display: none;
   padding-top: 8px;
@@ -1234,7 +1234,7 @@ ul.tab li a:focus, .active {
 /* **********************************************************************************************************************
  * Code Component
  */
-/* line 1038, ../sass/screen.scss */
+/* line 1040, ../sass/screen.scss */
 .code-div {
   background-color: #f1f1f1;
   overflow-x: auto;
@@ -1244,119 +1244,193 @@ ul.tab li a:focus, .active {
 /* **********************************************************************************************************************
  * Colours Component
  */
-/* line 1055, ../sass/screen.scss */
+/* line 1057, ../sass/screen.scss */
 .primary-lightest {
   background-color: #e8f6fc;
 }
 
-/* line 1058, ../sass/screen.scss */
+/* line 1060, ../sass/screen.scss */
 .primary-lighter {
   background-color: #bae4f7;
 }
 
-/* line 1061, ../sass/screen.scss */
+/* line 1063, ../sass/screen.scss */
 .primary-light {
   background-color: #5ec1ed;
 }
 
-/* line 1064, ../sass/screen.scss */
+/* line 1066, ../sass/screen.scss */
 .primary-base {
   background-color: #19a6e6;
 }
 
-/* line 1067, ../sass/screen.scss */
+/* line 1069, ../sass/screen.scss */
 .primary-dark {
   background-color: #1274a1;
 }
 
-/* line 1070, ../sass/screen.scss */
+/* line 1072, ../sass/screen.scss */
 .primary-darker {
   background-color: #083245;
 }
 
-/* line 1073, ../sass/screen.scss */
+/* line 1075, ../sass/screen.scss */
 .primary-darkest {
   background-color: #031117;
 }
 
-/* line 1055, ../sass/screen.scss */
+/* line 1057, ../sass/screen.scss */
 .secondary-lightest {
   background-color: #e8fcfc;
 }
 
-/* line 1058, ../sass/screen.scss */
+/* line 1060, ../sass/screen.scss */
 .secondary-lighter {
   background-color: #baf7f5;
 }
 
-/* line 1061, ../sass/screen.scss */
+/* line 1063, ../sass/screen.scss */
 .secondary-light {
   background-color: #5eede7;
 }
 
-/* line 1064, ../sass/screen.scss */
+/* line 1066, ../sass/screen.scss */
 .secondary-base {
   background-color: #19e6dd;
 }
 
-/* line 1067, ../sass/screen.scss */
+/* line 1069, ../sass/screen.scss */
 .secondary-dark {
   background-color: #12a19b;
 }
 
-/* line 1070, ../sass/screen.scss */
+/* line 1072, ../sass/screen.scss */
 .secondary-darker {
   background-color: #084542;
 }
 
-/* line 1073, ../sass/screen.scss */
+/* line 1075, ../sass/screen.scss */
 .secondary-darkest {
   background-color: #031716;
 }
 
-/* line 1055, ../sass/screen.scss */
+/* line 1057, ../sass/screen.scss */
 .tertiary-lightest {
   background-color: #fce8fa;
 }
 
-/* line 1058, ../sass/screen.scss */
+/* line 1060, ../sass/screen.scss */
 .tertiary-lighter {
   background-color: #f7baf0;
 }
 
-/* line 1061, ../sass/screen.scss */
+/* line 1063, ../sass/screen.scss */
 .tertiary-light {
   background-color: #ed5edc;
 }
 
-/* line 1064, ../sass/screen.scss */
+/* line 1066, ../sass/screen.scss */
 .tertiary-base {
   background-color: #e619cc;
 }
 
-/* line 1067, ../sass/screen.scss */
+/* line 1069, ../sass/screen.scss */
 .tertiary-dark {
   background-color: #a1128f;
 }
 
-/* line 1070, ../sass/screen.scss */
+/* line 1072, ../sass/screen.scss */
 .tertiary-darker {
   background-color: #45083d;
 }
 
-/* line 1073, ../sass/screen.scss */
+/* line 1075, ../sass/screen.scss */
 .tertiary-darkest {
   background-color: #170314;
 }
 
-/* line 1078, ../sass/screen.scss */
+/* line 1080, ../sass/screen.scss */
 .palette h4 {
   text-align: center;
 }
 
-/* line 1082, ../sass/screen.scss */
+/* line 1084, ../sass/screen.scss */
 .color-div {
   height: 50px;
   border: 2px solid grey;
   margin: 2px;
+}
+
+/* **********************************************************************************************************************
+ * Progress Bar Component
+ */
+/* line 1092, ../sass/screen.scss */
+progress[value] {
+  width: 100%;
+  -webkit-appearance: none;
+  background-color: white;
+  appearance: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+/* line 1100, ../sass/screen.scss */
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px grey;
+}
+
+/* line 1106, ../sass/screen.scss */
+.progress-bar-1 progress[value]::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(-45deg, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%), -webkit-linear-gradient(top, #29b6f6, #29b6f6), -webkit-linear-gradient(left, #29b6f6, #f44);
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+/* line 1119, ../sass/screen.scss */
+.progress-bar-2 progress[value]::-webkit-progress-value {
+  background-color: #29b6f6;
+  border-radius: 2px;
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+/* **********************************************************************************************************************
+ * Lists Component
+ */
+/* line 1128, ../sass/screen.scss */
+ul {
+  list-style-type: circle;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/* line 1133, ../sass/screen.scss */
+ul li {
+  padding-bottom: 10px;
+}
+
+/* line 1137, ../sass/screen.scss */
+ol {
+  list-style-type: decimal;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/* line 1142, ../sass/screen.scss */
+ol li {
+  padding-bottom: 10px;
+}
+
+/* line 1146, ../sass/screen.scss */
+dl {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+/* line 1150, ../sass/screen.scss */
+dl dt {
+  padding-bottom: 10px;
+}
+/* line 1154, ../sass/screen.scss */
+dl dd {
+  padding-bottom: 10px;
+  padding-left: 20px;
 }
