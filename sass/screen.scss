@@ -10,6 +10,8 @@
  /*29b6f6*/
 $saturation: 80%;
 $primary-color: #29b6f6;
+$secondary-color: $primary-color + #00ff00;
+$tertiary-color: $primary-color + #ff0000;
 $border-rad: 4px;
 $image-text-color: white;
 $video-text-color: white;
@@ -160,7 +162,6 @@ html,body{
  */
 [class*="image-c"] {
 	box-shadow: 2px 2px 10px grey;
-	background: url(../images/image_1.png) center/cover ;
 	width: 100%;
 	margin-bottom: 10px;
 	
@@ -970,6 +971,7 @@ td {
     border-radius: $border-rad;
 	border: 2px solid $primary-color;
     padding: 5px 0;
+	margin-top: 4px;
 
     /* Position the tooltip */
     position: absolute;
@@ -1043,7 +1045,7 @@ ul.tab li a:focus, .active {
 /* **********************************************************************************************************************
  * Colours Component
  */
-$hues: (primary: $primary-color, secondary: $primary-color + #00ff00, tertiary: $primary-color + #ff0000);
+$hues: (primary: $primary-color, secondary: $secondary-color, tertiary: $tertiary-color);
 $palettes: ();
 @function palette($name, $tint:'base') {
   @return map-get(map-get($palettes, $name), $tint);
@@ -1083,4 +1085,74 @@ $primary-color in $hues {
 	height: 50px;
 	border: 2px solid grey;
 	margin: 2px;
+}
+/* **********************************************************************************************************************
+ * Progress Bar Component
+ */
+progress[value] {
+	width: 100%;
+	-webkit-appearance: none;
+	background-color: white;
+	appearance: none;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+progress[value]::-webkit-progress-bar {
+	background-color: #eee;
+	border-radius: 2px;
+	box-shadow: 1px 1px 5px grey;
+}
+.progress-bar-1 {
+	progress[value]::-webkit-progress-value {
+		background-image:	-webkit-linear-gradient(-45deg, 
+								   transparent 33%, rgba(0, 0, 0, .1) 33%, 
+								   rgba(0,0, 0, .1) 66%, transparent 66%),
+							-webkit-linear-gradient(top, 
+									$primary-color, 
+								   $primary-color),
+							-webkit-linear-gradient(left, $primary-color, #f44);
+		border-radius: 2px; 
+		background-size: 35px 20px, 100% 100%, 100% 100%;
+	}
+}
+.progress-bar-2 {
+	progress[value]::-webkit-progress-value {
+		background-color: $primary-color;
+		border-radius: 2px; 
+		background-size: 35px 20px, 100% 100%, 100% 100%;
+	}
+}
+/* **********************************************************************************************************************
+ * Lists Component
+ */
+ul {
+	list-style-type: circle;
+	margin-left: 20px;
+	margin-top: 20px;
+	
+	li {
+		padding-bottom: 10px;
+	}
+}
+ol {
+	list-style-type: decimal;
+	margin-left: 20px;
+	margin-top: 20px;
+	
+	li {
+		padding-bottom: 10px;
+	}
+}
+dl {
+	margin-left: 20px;
+	margin-top: 20px;
+	
+	dt {
+		padding-bottom: 10px;
+	}
+	
+	dd {
+		padding-bottom: 10px;
+		padding-left: 20px;
+	}
 }

@@ -43,6 +43,7 @@ document.getElementById(id).style.display = visibility;
   }
 
   to {
+
     display: none;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
@@ -56,6 +57,7 @@ document.getElementById(id).style.display = visibility;
   }
 
   to {
+
     display: none;
     -webkit-transform: translate3d(-100%, 0, 0);
     transform: translate3d(-100%, 0, 0);
@@ -393,7 +395,7 @@ document.getElementById(id).style.display = visibility;
     
     <div class="row">
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <div class="image-c medium">
+            <div class="image-component medium" style="background: url(images/image_1.png) center/cover;">
                 <div class="image-overlay">
                     <span class="image-text">Image.jpg
                     </span>
@@ -402,7 +404,7 @@ document.getElementById(id).style.display = visibility;
         </div>
 
         <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-            <div class="image-c small">
+            <div class="image-component small" style="background: url(images/image_1.png) center/cover;">
                 <div class="image-overlay">
                     <span class="image-text">Image.jpg
                     </span>
@@ -411,7 +413,7 @@ document.getElementById(id).style.display = visibility;
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="image-c large">
+            <div class="image-component large" style="background: url(images/image_1.png) center/cover;">
                 <div class="image-overlay">
                     <span class="image-text">Image.jpg
                     </span>
@@ -649,6 +651,7 @@ document.getElementById(id).style.display = visibility;
             <div  class="card-type-1">
                 <div class="card-header">
                     <span class="card-header-text">Shubham Naik
+                    <i data-id="type1" class="material-icons animate-close">close</i>
                     <i class="material-icons">home</i>
                     <i data-id="type1" class="material-icons animate-close">close</i>
                     <i class="material-icons">link</i>
@@ -725,8 +728,27 @@ document.getElementById(id).style.display = visibility;
             </div>
         </div>
     </div>
-    
 
+	<script type="text/javascript">
+        window.addEventListener("load",function(){
+            var animate_close = document.getElementsByClassName("animate-close");
+            for(var i=0; i<animate_close.length;i++){
+                animate_close[i].addEventListener("click",function(evt){
+                    var parent = this.dataset.id;
+                    var parent_first = this.parentNode;
+                    var parent_second = parent_first.parentNode; 
+                    var parent_third = parent_second.parentNode; 
+                    var parent_forth = parent_third.parentNode; 
+
+                    parent_forth.className += " animated slideOutLeft";
+                    setTimeout( 
+                        function(){parent_forth.style.display = "none";}
+                        ,850);
+                })
+            }
+        });
+    </script>
+    
 </div>
 
 
@@ -896,7 +918,7 @@ document.getElementById(id).style.display = visibility;
     <xmp>
     <div class="row">
         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">	
-            <div class="image-c medium">
+            <div class="image-component medium" style="background: url(images/image_1.png) center/cover;">
                 <div class="image-overlay">
                     <span class="image-text">Image.jpg
                     </span>
@@ -916,7 +938,7 @@ document.getElementById(id).style.display = visibility;
 	
     <div class="row">
         <div class="col-lg-12">
-        <h3>Code Component</h3>
+        <h3>Color Palette Component</h3>
         </div>
     </div>
     
@@ -960,10 +982,162 @@ document.getElementById(id).style.display = visibility;
 </div>
 
 
+<!--Progress Bar-->
+<div class="progress-bar-section">
+	
+    <div class="row">
+        <div class="col-lg-12">
+        <h3>Progress Bar Component</h3>
+        </div>
+    </div>
+    
+    <div class="row">    
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-9">
+        <div class="progress-bar-1">
+  			<progress id="pold" value="40" max="100"}>
+            	<div pseudo="-webkit-progress-inner-element">
+                	<div pseudo="-webkit-progress-bar">
+                    	<div pseudo="-webkit-progress-value">
+                    	</div>
+                    </div>
+                </div>
+            </progress>
+        </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+            <button class="button-color-div" onClick="progress()">Start</button>
+            <button class="button-simple-div" onClick="degress()">Reset</button>
+    	</div>
+    </div>
+     
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <h4>Progress Bar Type 1</h4>
+        <div class="progress-bar-1">
+  			<progress id="pold" value="40" max="100"}>
+            	<div pseudo="-webkit-progress-inner-element">
+                	<div pseudo="-webkit-progress-bar">
+                    	<div pseudo="-webkit-progress-value">
+                    	</div>
+                    </div>
+                </div>
+            </progress>
+        </div>
+        </div>
+        
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <h4>Progress Bar Type 2</h4>
+        <div class="progress-bar-2">
+  			<progress id="pold" value="40" max="100"}>
+            	<div pseudo="-webkit-progress-inner-element">
+                	<div pseudo="-webkit-progress-bar">
+                    	<div pseudo="-webkit-progress-value">
+                    	</div>
+                    </div>
+                </div>
+            </progress>
+        </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+		function inc(){
+			var bar = document.getElementById("pbar");
+			for(var i=0; i<=100; i=i+1){
+				bar.style.width = i+"%";
+				document.getElementById("status").innerHTML= i +"% complete";
+			}
+		}
+		function dec() {
+			var bar = document.getElementById("pbar");
+			bar.style.width = "0%";
+		}
+		function degress() {
+			var bar = document.getElementById("pold");
+				bar.value = 0;
+		}
+		function progress() {
+		var bar = document.getElementById("pold");
+		var id = setInterval(frame, 10);
+    	var width=1;
+    	function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++;
+            bar.value = width ;
+        }
+    }
+   }
+	</script>
+
+</div>
+        
+<!--Lists-->
+<div class="lists-section">
+	
+    <div class="row">
+        <div class="col-lg-12">
+        <h3>Lists Component</h3>
+        </div>
+    </div>
+    
+    <div class="row">    
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <h4>Unordered List</h4>
+        <ul>
+        	<li>Coffee</li>
+        	<li>Tea</li>
+        	<li>Milk</li>
+        </ul>
+		</div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <h4>Ordered List</h4>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+		</div>
+        
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <h4>A Description List</h4>        
+        <dl>
+            <dt>Coffee</dt>
+	            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+    	        <dd>- white cold drink</dd>
+        </dl>
+		</div>
+        
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+        <h4>Nested List</h4>        
+        <ol>
+          <li>Coffee</li>
+          <li>Tea
+            <ul>
+            <li>Black tea</li>
+            <li>Green tea</li>
+            </ul>
+          </li>
+          <li>Milk</li>
+        </ol>
+		</div>
+     </div>
+
+</div>
+
+
+
+
+
 
 <br><br><br><br><br><br><br>
 </div>    
 </body>
+
     <script type="text/javascript">
         window.addEventListener("load",function(){
             var animate_close = document.getElementsByClassName("animate-close");
