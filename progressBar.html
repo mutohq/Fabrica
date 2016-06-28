@@ -31,7 +31,27 @@
             bar.value = width ;
         }
     }
+
    }
+
+   		function progress_ani() {
+		var bar = document.getElementById("pani");
+		var id = setInterval(frame, 10);
+    	var width=1;
+    	function frame() {
+        if (width >= 100) {
+            clearInterval(id);
+        } else {
+            width++;
+            bar.style.width = width + "%";
+            document.getElementById("anistat").innerHTML= i +"% complete";
+        }
+   		}
+   		}
+   		function degress_ani() {
+			var rebar = document.getElementById("pani");
+				rebar.style.width = "0%";
+		}
 	</script>
 </head>
 <body>
@@ -54,6 +74,22 @@
 	
 	<BUTTON onClick="progress()" >start</BUTTON>
   	<BUTTON onClick="degress()" >reset</BUTTON>
+  	<br><br><br>
+  	<h4>Bootstrap animated progress bar</h4>
+  	<div class="progress">
+	  <div  id="pani"
+	  		class="progress-bar progress-bar-striped active" 
+	  		role="progressbar" 
+	  		aria-valuenow="45" 
+	  		aria-valuemin="0" 
+	  		aria-valuemax="100" 
+	  		style="width: 1%">
+	  </div>
+	  <br>
+	
+</div>
+	<BUTTON onClick="progress_ani()" >start</BUTTON>
+  	<BUTTON onClick="degress_ani()" >reset</BUTTON>
   	</div>
 </body>
 </html>
