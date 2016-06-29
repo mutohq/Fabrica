@@ -18,6 +18,7 @@ func main() {
 	shell_script := filepath.Join(current_dir, "fabrica.sh")
 
 	r.POST("/update", func(c *gin.Context) {
+		c.JSON(200, "OK")
 		out, err := exec.Command(shell_script).Output()
 		if err != nil {
 			log.Fatalln("%s", err)
