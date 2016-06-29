@@ -43,7 +43,7 @@ document.getElementById(id).style.display = visibility;
 }
 
 /* Define Out transitions here */
-@-moz-keyframes slideOutLeft
+@-moz-keyframes slideOutLeftAlert
 {
     from
     {
@@ -55,20 +55,7 @@ document.getElementById(id).style.display = visibility;
         left: -100em;
     }
 }
-@-webkit-keyframes slideOutLeft
-{
-    from
-    {
-        left: 0em;
-    }
-
-    to
-    {
-        left: -100em;
-    }
-}
-
-@keyframes slideOutLeft
+@-webkit-keyframes slideOutLeftAlert
 {
     from
     {
@@ -81,11 +68,24 @@ document.getElementById(id).style.display = visibility;
     }
 }
 
-.slideOutLeft
+@keyframes slideOutLeftAlert
 {
-    -moz-animation-name: slideOutLeft;
-    -webkit-animation-name: slideOutLeft;
-    animation-name: slideOutLeft;
+    from
+    {
+        left: 0em;
+    }
+
+    to
+    {
+        left: -100em;
+    }
+}
+
+.slideOutLeftAlert
+{
+    -moz-animation-name: slideOutLeftAlert;
+    -webkit-animation-name: slideOutLeftAlert;
+    animation-name: slideOutLeftAlert;
 }
 
 @-webkit-keyframes slideOutRight {
@@ -112,7 +112,39 @@ document.getElementById(id).style.display = visibility;
     transform: translate3d(0%, 0, 0);
   }
 }
+@-webkit-keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
+  to {
+
+    display: none;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+
+    display: none;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.slideOutLeft {
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+
+}
 .slideOutRight {
   -webkit-animation: slideOutRight .8s;
   animation: slideOutRight .8s;
@@ -1150,28 +1182,28 @@ document.getElementById(id).style.display = visibility;
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
             <div class="button-div">
             <h4>Default</h4>
-            <button onclick="myalert()" class="button-color-div">Button</button>
+            <button onclick="defaultAlert()" class="button-color-div">Button</button>
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
             <div class="button-div">
             <h4>Info</h4>
-            <button class="button-color-div">Button</button>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-            <div class="button-div">
-            <h4>Success</h4>
-            <button class="button-color-div">Button</button>
+            <button onclick="infoAlert()" class="button-color-div">Button</button>
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
             <div class="button-div">
             <h4>Warning</h4>
-            <button class="button-color-div">Button</button>
+            <button onclick="warningAlert()" class="button-color-div">Button</button>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+            <div class="button-div">
+            <h4>Success</h4>
+            <button onclick="successAlert()" class="button-color-div">Button</button>
             </div>
         </div>
 </div>
@@ -1180,21 +1212,17 @@ document.getElementById(id).style.display = visibility;
 </body>
 
     <script type="text/javascript">
-    function myalert () {
+    function defaultAlert () {
        var default_alert = new JSAlerts({
             top: "2em",
             right: "2em"
             });
 
             default_alert.Notify({
-
-            top: "2em",
-            right: "2em",
             text: "<p>Default</p>",
             duration: "2000",
-            // animationIn: "slideInLeft",
             animationIn: "flipin",
-            animationOut: "slideOutLeft",
+            animationOut: "slideOutTop",
             closeButtonColor: "#grey",
             animateInDuration: "800",
             animateOutDuration: "800",
@@ -1204,6 +1232,67 @@ document.getElementById(id).style.display = visibility;
             frame: "frame",
         });
     };
+    function infoAlert () {
+       var info_alert = new JSAlerts({
+            top: "8em",
+            right: "2em"
+            });
+
+            info_alert.Notify({
+            text: "<p>Info</p>",
+            duration: "3000",
+            animationIn: "flipin",
+            animationOut: "slideOutLeftAlert",
+            closeButtonColor: "#grey",
+            animateInDuration: "800",
+            animateOutDuration: "800",
+            autoClose: true,
+            closeButton: true,
+            style: "info",
+            frame: "frame",
+        });
+    };
+    function warningAlert () {
+       var warning_alert = new JSAlerts({
+            top: "14em",
+            right: "2em"
+            });
+
+            warning_alert.Notify({
+            text: "<p>warning</p>",
+            duration: "3000",
+            animationIn: "flipin",
+            animationOut: "slideOutRightAlert",
+            closeButtonColor: "#grey",
+            animateInDuration: "800",
+            animateOutDuration: "800",
+            autoClose: true,
+            closeButton: true,
+            style: "warning",
+            frame: "frame",
+        });
+    };
+    function successAlert () {
+       var success_alert = new JSAlerts({
+            top: "20em",
+            right: "2em"
+            });
+
+            success_alert.Notify({
+            text: "<p>success</p>",
+            duration: "3000",
+            animationIn: "flipin",
+            animationOut: "slideOutBottom",
+            closeButtonColor: "#grey",
+            animateInDuration: "800",
+            animateOutDuration: "800",
+            autoClose: true,
+            closeButton: true,
+            style: "success",
+            frame: "frame",
+        });
+    };
+
         window.addEventListener("load",function(){
             var animate_close = document.getElementsByClassName("animate-close");
             for(var i=0; i<animate_close.length;i++){
