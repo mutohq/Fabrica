@@ -1,7 +1,7 @@
 server {
       
   
-      root /var/www/Fabrica/;
+      root /var/www/Fabrica/documentation/;
 #     index index.html index.htm;
       listen 80;
       listen 443 ssl http2;

@@ -1,0 +1,11 @@
+{
+    "sourceDir" : "/home/prabhjot/Fabrica/templates",
+    "destDir" : "/home/prabhjot/Fabrica/documentation/",
+    "headerTmpl" : "/home/prabhjot/Fabrica/templates/header.tmpl",
+    "footerTmpl" : "/home/prabhjot/Fabrica/templates/footer.tmpl",
+    "tmplExtInput" : "tmpl", 
+    "tmplExtOutput" : "html",
+    "otherfolderstocopy" : [
+        "/home/prabhjot/Fabrica/lib"
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "sourceDir" : "E:\\Fabrica\\templates",
+    "destDir" : "E:\\Fabrica\\documentation",
+    "headerTmpl" : "E:\\Fabrica\\templates\\header.tmpl",
+    "footerTmpl" : "E:\\Fabrica\\templates\\footer.tmpl",
+    "tmplExtInput" : "tmpl", 
+    "tmplExtOutput" : "html",
+    "otherfolderstocopy" : [
+        "E:\\Fabrica\\lib"
+    ]
+}
