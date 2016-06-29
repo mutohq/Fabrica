@@ -418,6 +418,8 @@ function JSAlerts(params)
             {
                 console.log("Before removing parentEl");
                 console.log(el.parentNode);
+                el.parentNode.style.display = "none";
+                // el.parentNode.removeChild(el);
                 el.parentNode.parentNode.removeChild(el.parentNode);
                 console.log("After removing parentEl");
             }

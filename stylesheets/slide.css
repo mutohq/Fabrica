@@ -41,11 +41,11 @@
     animation-name: slideOutLeft;
 }
 
-.slideOutRight
+.slideOutRightAlert
 {
-    -moz-animation-name: slideOutRight;
-    -webkit-animation-name: slideOutRight;
-    animation-name: slideOutRight;
+    -moz-animation-name: slideOutRightAlert;
+    -webkit-animation-name: slideOutRightAlert;
+    animation-name: slideOutRightAlert;
 }
 
 .slideOutTop
@@ -264,7 +264,7 @@
     }
 }
 
-@-moz-keyframes slideOutRight
+@-moz-keyframes slideOutRightAlert
 {
     from
     {
@@ -277,7 +277,7 @@
     }
 }
 
-@-webkit-keyframes slideOutRight
+@-webkit-keyframes slideOutRightAlert
 {
     from
     {
@@ -290,7 +290,7 @@
     }
 }
 
-@keyframes slideOutRight
+@keyframes slideOutRightAlert
 {
     from
     {
