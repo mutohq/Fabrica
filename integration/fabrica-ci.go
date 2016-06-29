@@ -23,7 +23,7 @@ func main() {
 		if err != nil {
 			log.Fatalln("%s", err)
 		}
-		log.Printf("%s", out)
+		fmt.Printf("\nShell script output --> %s\n\n", out)
 	})
 
 	fmt.Println("Live on :7000")
