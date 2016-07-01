@@ -12,145 +12,9 @@
 <link rel="stylesheet" href="lib/jsalerts.css">
 <link rel="stylesheet" href="lib/flipin.css">
 <link rel="stylesheet" href="lib/slide.css">
+<link rel="stylesheet" href="lib/styles.css">
 <script src="js/jsalerts.js" type="text/javascript"></script>
-
-<script language="JavaScript">
-function setVisibility(id, visibility) {
-document.getElementById(id).style.display = visibility;
-}
-</script>
- <style type="text/css">
-
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.tabcontent {
-    -webkit-animation: fadeEffect 1.5s;
-    animation: fadeEffect 1.5s;
-}
-
-@-webkit-keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@keyframes fadeEffect {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-/* Define Out transitions here */
-@-moz-keyframes slideOutLeftAlert
-{
-    from
-    {
-        left: 0em;
-    }
-
-    to
-    {
-        left: -100em;
-    }
-}
-@-webkit-keyframes slideOutLeftAlert
-{
-    from
-    {
-        left: 0em;
-    }
-
-    to
-    {
-        left: -100em;
-    }
-}
-
-@keyframes slideOutLeftAlert
-{
-    from
-    {
-        left: 0em;
-    }
-
-    to
-    {
-        left: -100em;
-    }
-}
-
-.slideOutLeftAlert
-{
-    -moz-animation-name: slideOutLeftAlert;
-    -webkit-animation-name: slideOutLeftAlert;
-    animation-name: slideOutLeftAlert;
-}
-
-@-webkit-keyframes slideOutRight {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    display: block;
-    -webkit-transform: translate3d(0%, 0, 0);
-    transform: translate3d(0%, 0, 0);
-  }
-}
-
-@keyframes slideOutRight {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    -webkit-transform: translate3d(0%, 0, 0);
-    transform: translate3d(0%, 0, 0);
-  }
-}
-@-webkit-keyframes slideOutLeft {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-
-    display: none;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-@keyframes slideOutLeft {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-
-    display: none;
-    -webkit-transform: translate3d(-100%, 0, 0);
-    transform: translate3d(-100%, 0, 0);
-  }
-}
-
-.slideOutLeft {
-  -webkit-animation-name: slideOutLeft;
-  animation-name: slideOutLeft;
-
-}
-.slideOutRight {
-  -webkit-animation: slideOutRight .8s;
-  animation: slideOutRight .8s;
-}
-
-    </style>
+<script src="js/scripts.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -170,19 +34,13 @@ document.getElementById(id).style.display = visibility;
             <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xs-offset-1">
                 <div class="header-title">Fabrica</div>
             </div>
+
+            <div id="menuhide" type="button" onclick="slideOut()" style="display:none;position:relative;">
+            	<i class="material-icons">menu</i>
+            </div>
         </div>
 	</div>
     </div>
-    <script type="text/javascript">
-        function slideIn() {
-            document.getElementById("menu").className += " animated slideOutRight";
-            document.getElementById("menu").style.display = "block";
-        }
-        function slideOut() {
-            var def =" menucontent col-xs-8 col-sm-6 col-md-4 col-lg-4 "
-            document.getElementById("menu").className = def +"animated slideOutLeft";
-        }
-    </script>
     <div id="menu" class="menucontent col-xs-8 col-sm-6 col-md-4 col-lg-4">
     <div class="container-fluid">
 
@@ -197,20 +55,37 @@ document.getElementById(id).style.display = visibility;
 
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xs-offset-12">
-                <h3><button class="round-button-div small-round-button"><i class="material-icons">home</i></button>Main Title</h3>
+                <!-- <h4><button class="round-button-div small-round-button"> -->
+                <h4><i class="material-icons">keyboard_arrow_down</i></button>Home Page</h4>
                 <ul style="list-style-type:none">
-                  <li><i class="material-icons">filter_1</i>Option 1</li>
-                  <li><i class="material-icons">filter_2</i>Option 2</li>
-                  <li><i class="material-icons">filter_3</i>Option 3</li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#typography">Typography</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#styled">Styled Types</a></li>
+                </ul>
+                <h4>
+                <i class="material-icons">keyboard_arrow_down</i>Components</h4>
+                <ul style="list-style-type:none">
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#Form" style="border: none;">Form Component</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#Card">Card Component</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#Tabs">Tabs Component</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#Lists">List Component</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#Image">Image Component</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#Video">Video Component</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#Table">Table Component</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#Badge">Badge Component</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#Toast">Toast Component</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#Tooltip">Tooltip Component</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#CheckBox">CheckBoxes Component</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#ProgressBar">Progress Bar Component</a></li>
+                  <li><i class="material-icons">keyboard_arrow_right</i><a href="#ColorPalette">Color Palette Component</a></li>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="image-c large">
+                <!-- <div class="image-c large">
                     <div class="image-overlay">
                         <span class="image-text">Image.jpg
                         </span>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -366,7 +241,7 @@ document.getElementById(id).style.display = visibility;
 
 	<div class="row">
         <div class="col-lg-12">
-        <h3>Typography</h3>
+        <h3 id="typography">Typography</h3>
         </div>
     </div>
 
@@ -382,7 +257,7 @@ document.getElementById(id).style.display = visibility;
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <h1>Styled Types</h1>
+            <h1 id="styled">Styled Types</h1>
             <div class="code-div"><xmp><p></xmp></div><p>Basic Type&nbsp;</p><br>
             <div class="code-div"><xmp><strong></xmp></div><p><strong>Bolded</strong></p><br>
             <div class="code-div"><xmp><em></xmp></div><p><em>Italicized</em></p><br>
@@ -397,7 +272,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Title and Data Component</h3>
+        <h3 id="tableData">Title and Data Component</h3>
         </div>
     </div>
 
@@ -439,7 +314,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Image Component</h3>
+        <h3 id="Image">Image Component</h3>
         </div>
     </div>
 
@@ -480,7 +355,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Video Component</h3>
+        <h3 id="Video">Video Component</h3>
         </div>
     </div>
 
@@ -503,7 +378,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Form Components</h3>
+        <h3 id="Form">Form Components</h3>
         </div>
     </div>
 
@@ -511,7 +386,7 @@ document.getElementById(id).style.display = visibility;
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
         	<div class="button-div">
-        	<h4>Simple Button</h4>
+        	<h4 id="Button">Simple Button</h4>
             <button class="button-simple-div">Button</button>
             </div>
         </div>
@@ -548,9 +423,9 @@ document.getElementById(id).style.display = visibility;
     <div class="row">
     	<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
             <div class="checkbox-div">
-                <h4>Checked Checkbox</h4>
+                <h4 id="Checkbox">Checked Checkbox</h4>
                 <input type="checkbox" id="cb1" name="checkbox" checked>
-                <label for="cb1">Ckeckbox Checked</label>
+                <label for="cb1">Checkbox Checked</label>
             </div>
         </div>
 
@@ -558,13 +433,13 @@ document.getElementById(id).style.display = visibility;
             <div class="checkbox-div">
                 <h4>Unchecked Checkbox</h4>
                 <input type="checkbox" id="cb2" name="checkbox">
-                <label for="cb2">Ckeckbox Unchecked</label>
+                <label for="cb2">Checkbox Unchecked</label>
             </div>
         </div>
 	<!--Radio Button Component-->
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
             <div class="radio-div">
-                <h4>Active Radio Button</h4>
+                <h4 id="Radio">Active Radio Button</h4>
                 <input type="radio" id="rd1" name="radio" value="Option 1" checked>
                 <label for="rd1">Radio On</label>
             </div>
@@ -583,7 +458,7 @@ document.getElementById(id).style.display = visibility;
     <div class="row">
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <div class="text-form-div">
-                <h4>First name</h4>
+                <h4 id="Input">First name</h4>
                 <input type="text" name="firstname"  class="text-form-input" placeholder="Shubham">
             </div>
         </div>
@@ -600,7 +475,7 @@ document.getElementById(id).style.display = visibility;
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <div class="textarea-div">
-            <h4>Message</h4>
+            <h4 id="Message">Message</h4>
             <textarea class="textarea-data" cols="" rows="5" placeholder="Hello ..."></textarea>
             </div>
         </div>
@@ -626,7 +501,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Table Component</h3>
+        <h3 id="Table">Table Component</h3>
         </div>
     </div>
 
@@ -691,7 +566,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Card Component</h3>
+        <h3 id="Card">Card Component</h3>
         </div>
     </div>
 
@@ -777,27 +652,6 @@ document.getElementById(id).style.display = visibility;
             </div>
         </div>
     </div>
-
-	<script type="text/javascript">
-        window.addEventListener("load",function(){
-            var animate_close = document.getElementsByClassName("animate-close");
-            for(var i=0; i<animate_close.length;i++){
-                animate_close[i].addEventListener("click",function(evt){
-                    var parent = this.dataset.id;
-                    var parent_first = this.parentNode;
-                    var parent_second = parent_first.parentNode;
-                    var parent_third = parent_second.parentNode;
-                    var parent_forth = parent_third.parentNode;
-
-                    parent_forth.className += " animated slideOutLeft";
-                    setTimeout(
-                        function(){parent_forth.style.display = "none";}
-                        ,550);
-                })
-            }
-        });
-    </script>
-
 </div>
 
 
@@ -806,7 +660,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Badge Component</h3>
+        <h3 id="Badge">Badge Component</h3>
         </div>
     </div>
 
@@ -833,7 +687,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Toast Component</h3>
+        <h3 id="Toast">Toast Component</h3>
         </div>
     </div>
 
@@ -850,23 +704,6 @@ document.getElementById(id).style.display = visibility;
                 <div id="snackbar-2">Toast Shown</div>
         </div>
     </div>
-
-	<script>
-    function myFunction1() {
-        var x = document.getElementById("snackbar-1")
-        x.className = "show";
-        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-    }
-    </script>
-
-	<script>
-    function myFunction2() {
-        var x = document.getElementById("snackbar-2")
-        x.className = "show";
-        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-    }
-    </script>
-
 </div>
 
 <!--Tooltip Component-->
@@ -874,7 +711,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Tooltip Component</h3>
+        <h3 id="Tooltip">Tooltip Component</h3>
         </div>
     </div>
 
@@ -900,7 +737,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Tabs Component</h3>
+        <h3 id="Tabs">Tabs Component</h3>
         </div>
     </div>
 
@@ -933,23 +770,6 @@ document.getElementById(id).style.display = visibility;
        	</div>
 
     </div>
-
-	<script>
-	function openCity(evt, cityName) {
-		var i, tabcontent, tablinks;
-		tabcontent = document.getElementsByClassName("tabcontent");
-		for (i = 0; i < tabcontent.length; i++) {
-			tabcontent[i].style.display = "none";
-		}
-		tablinks = document.getElementsByClassName("tablinks");
-		for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
-		}
-		document.getElementById(cityName).style.display = "block";
-		evt.currentTarget.className += " active";
-	}
-	</script>
-
 </div>
 
 <!--Code Component-->
@@ -957,7 +777,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Code Component</h3>
+        <h3 id="Code">Code Component</h3>
         </div>
     </div>
 
@@ -987,7 +807,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Color Palette Component</h3>
+        <h3 id="ColorPalette">Color Palette Component</h3>
         </div>
     </div>
 
@@ -1036,7 +856,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Progress Bar Component</h3>
+        <h3 id="ProgressBar">Progress Bar Component</h3>
         </div>
     </div>
 
@@ -1089,38 +909,6 @@ document.getElementById(id).style.display = visibility;
         </div>
         </div>
     </div>
-
-    <script type="text/javascript">
-		function inc(){
-			var bar = document.getElementById("pbar");
-			for(var i=0; i<=100; i=i+1){
-				bar.style.width = i+"%";
-				document.getElementById("status").innerHTML= i +"% complete";
-			}
-		}
-		function dec() {
-			var bar = document.getElementById("pbar");
-			bar.style.width = "0%";
-		}
-		function degress() {
-			var bar = document.getElementById("pold");
-				bar.value = 0;
-		}
-		function progress() {
-		var bar = document.getElementById("pold");
-		var id = setInterval(frame, 10);
-    	var width=1;
-    	function frame() {
-        if (width >= 100) {
-            clearInterval(id);
-        } else {
-            width++;
-            bar.value = width ;
-        }
-    }
-   }
-	</script>
-
 </div>
 
 <!--Lists-->
@@ -1128,7 +916,7 @@ document.getElementById(id).style.display = visibility;
 
     <div class="row">
         <div class="col-lg-12">
-        <h3>Lists Component</h3>
+        <h3 id="Lists">Lists Component</h3>
         </div>
     </div>
 
@@ -1177,7 +965,7 @@ document.getElementById(id).style.display = visibility;
      </div>
 
 </div>
-    <h3>Alert Component buttons</h3>
+    <h3 id="Alert">Alert Component buttons</h3>
 <div class="row">
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
             <div class="button-div">
@@ -1210,106 +998,4 @@ document.getElementById(id).style.display = visibility;
 <br><br><br><br><br><br><br>
 </div>
 </body>
-
-    <script type="text/javascript">
-    function defaultAlert () {
-       var default_alert = new JSAlerts({
-            top: "2em",
-            right: "2em"
-            });
-
-            default_alert.Notify({
-            text: "<p>Default</p>",
-            duration: "2000",
-            animationIn: "flipin",
-            animationOut: "slideOutTop",
-            closeButtonColor: "#grey",
-            animateInDuration: "800",
-            animateOutDuration: "800",
-            autoClose: true,
-            closeButton: true,
-            style: "default",
-            frame: "frame",
-        });
-    };
-    function infoAlert () {
-       var info_alert = new JSAlerts({
-            top: "8em",
-            right: "2em"
-            });
-
-            info_alert.Notify({
-            text: "<p>Info</p>",
-            duration: "3000",
-            animationIn: "flipin",
-            animationOut: "slideOutLeftAlert",
-            closeButtonColor: "#grey",
-            animateInDuration: "800",
-            animateOutDuration: "800",
-            autoClose: true,
-            closeButton: true,
-            style: "info",
-            frame: "frame",
-        });
-    };
-    function warningAlert () {
-       var warning_alert = new JSAlerts({
-            top: "14em",
-            right: "2em"
-            });
-
-            warning_alert.Notify({
-            text: "<p>warning</p>",
-            duration: "3000",
-            animationIn: "flipin",
-            animationOut: "slideOutRightAlert",
-            closeButtonColor: "#grey",
-            animateInDuration: "800",
-            animateOutDuration: "800",
-            autoClose: true,
-            closeButton: true,
-            style: "warning",
-            frame: "frame",
-        });
-    };
-    function successAlert () {
-       var success_alert = new JSAlerts({
-            top: "20em",
-            right: "2em"
-            });
-
-            success_alert.Notify({
-            text: "<p>success</p>",
-            duration: "3000",
-            animationIn: "flipin",
-            animationOut: "slideOutBottom",
-            closeButtonColor: "#grey",
-            animateInDuration: "800",
-            animateOutDuration: "800",
-            autoClose: true,
-            closeButton: true,
-            style: "success",
-            frame: "frame",
-        });
-    };
-
-        window.addEventListener("load",function(){
-            var animate_close = document.getElementsByClassName("animate-close");
-            for(var i=0; i<animate_close.length;i++){
-                animate_close[i].addEventListener("click",function(evt){
-                    var parent = this.dataset.id;
-                    var parent_first = this.parentNode;
-                    var parent_second = parent_first.parentNode;
-                    var parent_third = parent_second.parentNode;
-                    var parent_forth = parent_third.parentNode;
-
-                    parent_forth.className += " animated slideOutLeft";
-                    setTimeout(
-                        function(){parent_forth.style.display = "none";}
-                        ,850);
-                })
-            }
-        });
-    </script>
-
 </html>
