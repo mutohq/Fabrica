@@ -368,6 +368,7 @@ html, body {
   height: 100%;
   color: black;
   display: none;
+  overflow: scroll;
 }
 /* line 277, ../sass/screen.scss */
 .menucontent .onerow {
@@ -1206,7 +1207,7 @@ ul.tab li a {
 
 /* line 1015, ../sass/screen.scss */
 ul.tab li:last-child, a:last-child {
-  border-right: 2px solid #29b6f6;
+  border-right: none;
 }
 
 /* Change background color of links on hover */

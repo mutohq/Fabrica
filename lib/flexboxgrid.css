@@ -2,11 +2,13 @@
 .container {
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 80px;
 }
 
 .container-fluid {
   padding-right: 2rem;
   padding-left: 2rem;
+
 }
 
 .row {
@@ -223,6 +225,7 @@
 .col-xs-offset-11 {
   margin-left: 91.667%;
 }
+
 
 .start-xs {
   -webkit-box-pack: start;
