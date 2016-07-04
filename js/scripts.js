@@ -98,19 +98,19 @@ function progress() {
 
 function defaultAlert() {
     var default_alert = new JSAlerts({
-        top: "2em",
-        right: "2em"
+        // top: "2em",
+        // right: "2em"
     });
 
     default_alert.Notify({
         text: "<p>Default</p>",
         duration: "2000",
         animationIn: "flipin",
-        animationOut: "slideOutTop",
+        animationOut: "slideOutLeftAlert",
         closeButtonColor: "#grey",
         animateInDuration: "800",
         animateOutDuration: "800",
-        autoClose: true,
+        autoClose: false,
         closeButton: true,
         style: "default",
         frame: "frame",
@@ -119,8 +119,7 @@ function defaultAlert() {
 
 function infoAlert() {
     var info_alert = new JSAlerts({
-        top: "8em",
-        right: "2em"
+        
     });
 
     info_alert.Notify({
@@ -131,7 +130,7 @@ function infoAlert() {
         closeButtonColor: "#grey",
         animateInDuration: "800",
         animateOutDuration: "800",
-        autoClose: true,
+        autoClose: false,
         closeButton: true,
         style: "info",
         frame: "frame",
@@ -140,19 +139,19 @@ function infoAlert() {
 
 function warningAlert() {
     var warning_alert = new JSAlerts({
-        top: "14em",
-        right: "2em"
+        // top: "14em",
+        // right: "2em"
     });
 
     warning_alert.Notify({
         text: "<p>warning</p>",
         duration: "3000",
         animationIn: "flipin",
-        animationOut: "slideOutRightAlert",
+        animationOut: "slideOutLeftAlert",
         closeButtonColor: "#grey",
         animateInDuration: "800",
         animateOutDuration: "800",
-        autoClose: true,
+        autoClose: false,
         closeButton: true,
         style: "warning",
         frame: "frame",
@@ -161,19 +160,19 @@ function warningAlert() {
 
 function successAlert() {
     var success_alert = new JSAlerts({
-        top: "20em",
-        right: "2em"
+        // top: "20em",
+        // right: "2em"
     });
 
     success_alert.Notify({
         text: "<p>success</p>",
         duration: "3000",
         animationIn: "flipin",
-        animationOut: "slideOutBottom",
+        animationOut: "slideOutLeftAlert",
         closeButtonColor: "#grey",
         animateInDuration: "800",
         animateOutDuration: "800",
-        autoClose: true,
+        autoClose: false,
         closeButton: true,
         style: "success",
         frame: "frame",
