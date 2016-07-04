@@ -147,3 +147,9 @@ a:active  {
   -webkit-animation: slideOutRight .8s;
   animation: slideOutRight .8s;
 }
+
+.notification-container {
+  position: fixed;
+  top: 2em;
+  right: 1em;
+}

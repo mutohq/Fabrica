@@ -19,10 +19,13 @@ function JSAlerts(params) {
         this.browser_type = "IE";
     }
 
+    
     this.parentEl = document.createElement("div");
     parentEl = this.parentEl;
     this.parentEl.className = "notification-sandbox";
-    document.body.appendChild(this.parentEl);
+    this.parentEl.style.position = "relative";
+
+    document.getElementById("noticon").appendChild(this.parentEl);
 
     //Precedence of location is as follows:
     // 1. Top - Bottom  (Top has higher precedence over Bottom)
