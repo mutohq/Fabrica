@@ -197,3 +197,37 @@ window.addEventListener("load", function() {
         })
     }
 });
+// this.document.body.innerHTML += '<div style="position:absolute;width:50%;height:50%;opacity:0.3;z-index:100;background:#000;"></div>';
+
+// SVG Graphs
+window.onload = function(){
+var barData = [40,80,150,160,230];
+var ybar = [0,21,42,63,84];
+var svgNS = "http://www.w3.org/2000/svg";
+
+// barDiv = document.createElement("div");
+// document.body.appendChild(barDiv);
+var barGraph = document.getElementById("bargraph");
+figure = document.createElement("figure");
+barGraph.appendChild(figure);
+
+var svg = document.createElementNS(svgNS, "svg");
+svg.setAttributeNS(null,"width","420");
+svg.setAttributeNS(null,"height","150");
+// svg.setAttributeNS(null,"style","");
+figure.appendChild(svg);
+
+for(var i=0;i<barData.length; i++){
+    var group = document.createElementNS(svgNS,"g");
+    group.setAttributeNS(null,"class","bar");
+    svg.appendChild(group);
+
+    var rect = document.createElementNS(svgNS,"rect");
+    rect.setAttributeNS(null,"width",barData[i]);
+    rect.setAttributeNS(null,"height","19");
+    rect.setAttributeNS(null,"y",ybar[i]);
+    rect.setAttributeNS(null,"stroke","#29b6f6");
+    rect.setAttributeNS(null,"style","fill:none;");
+    group.appendChild(rect);
+}
+}
