@@ -197,37 +197,92 @@ window.addEventListener("load", function() {
         })
     }
 });
-// this.document.body.innerHTML += '<div style="position:absolute;width:50%;height:50%;opacity:0.3;z-index:100;background:#000;"></div>';
 
 // SVG Graphs
-window.onload = function(){
-var barData = [40,80,150,160,230];
-var ybar = [0,21,42,63,84];
-var svgNS = "http://www.w3.org/2000/svg";
+function xbarGraph() {
+    let xbarData = [40,80,150,160,230];
+    let ybar = [0,21,42,63,84];
+    let svgNS = "http://www.w3.org/2000/svg";
+    let svgWidth = Math.max.apply(null, xbarData) + 50;
+    let svgHeight = Math.max.apply(null, ybar) +30;
+    let xbarGraph = document.getElementById("bargraph");
+    figure = document.createElement("figure");
+    xbarGraph.appendChild(figure);
 
-// barDiv = document.createElement("div");
-// document.body.appendChild(barDiv);
-var barGraph = document.getElementById("bargraph");
-figure = document.createElement("figure");
-barGraph.appendChild(figure);
+    let svg = document.createElementNS(svgNS, "svg");
+    svg.setAttributeNS(null,"width",svgWidth);
+    svg.setAttributeNS(null,"height",svgHeight);
+    // svg.setAttributeNS(null,"style","border:2px solid;");
+    figure.appendChild(svg);
 
-var svg = document.createElementNS(svgNS, "svg");
-svg.setAttributeNS(null,"width","420");
-svg.setAttributeNS(null,"height","150");
-// svg.setAttributeNS(null,"style","");
-figure.appendChild(svg);
+    for(let i=0;i<xbarData.length; i++){
+        let group = document.createElementNS(svgNS,"g");
+        group.setAttributeNS(null,"class","bar");
+        svg.appendChild(group);
+      
+        let rect = document.createElementNS(svgNS,"rect");
+        rect.setAttributeNS(null,"width",xbarData[i]);
+        rect.setAttributeNS(null,"height","19");
+        rect.setAttributeNS(null,"y",ybar[i]);
+        rect.setAttributeNS(null,"stroke","#29b6f6");
+        rect.setAttributeNS(null,"style","fill:#29b6f6;");
+        group.appendChild(rect);
 
-for(var i=0;i<barData.length; i++){
-    var group = document.createElementNS(svgNS,"g");
-    group.setAttributeNS(null,"class","bar");
-    svg.appendChild(group);
-
-    var rect = document.createElementNS(svgNS,"rect");
-    rect.setAttributeNS(null,"width",barData[i]);
-    rect.setAttributeNS(null,"height","19");
-    rect.setAttributeNS(null,"y",ybar[i]);
-    rect.setAttributeNS(null,"stroke","#29b6f6");
-    rect.setAttributeNS(null,"style","fill:none;");
-    group.appendChild(rect);
+        let animate = document.createElementNS(svgNS, "animate");
+        animate.setAttribute("attributeType","XML");
+        animate.setAttribute("attributeName","width");
+        animate.setAttribute("from","0");
+        animate.setAttribute("to",xbarData[i]);
+        animate.setAttribute("begin","0");
+        animate.setAttribute("dur","3s");
+        animate.setAttribute("delay","1s");
+        animate.setAttribute("repeatCount","3");
+        rect.appendChild(animate);
+      }  
 }
+
+function ybarGraph(){
+    let ybarData = [40,80,150,160,230];
+    let xbar = [0,21,42,63,84];
+    let svgNS = "http://www.w3.org/2000/svg";
+    let svgHeight = Math.max.apply(null, ybarData) + 50;
+    let svgWidth = Math.max.apply(null, xbar) + 30;
+    let ybarGraph = document.getElementById("vbargraph");
+    figure = document.createElement("figure");
+    ybarGraph.appendChild(figure);
+
+    let svg = document.createElementNS(svgNS, "svg");
+    svg.setAttributeNS(null,"width",svgWidth);
+    svg.setAttributeNS(null,"height",svgHeight);
+    figure.appendChild(svg);
+
+    for(let i=0;i<ybarData.length; i++){
+        let group = document.createElementNS(svgNS,"g");
+        group.setAttributeNS(null,"class","bar");
+        svg.appendChild(group);
+
+        let rect = document.createElementNS(svgNS,"rect");
+        rect.setAttributeNS(null,"height",ybarData[i]);
+        rect.setAttributeNS(null,"width","19");
+        rect.setAttributeNS(null,"x",xbar[i]);
+        rect.setAttributeNS(null,"y",svgHeight - ybarData[i]);
+        rect.setAttributeNS(null,"stroke","#29b6f6");
+        rect.setAttributeNS(null,"style","fill:#29b6f6;");
+        group.appendChild(rect);
+
+        let animate = document.createElementNS(svgNS, "animate");
+        animate.setAttribute("attributeType","XML");
+        animate.setAttribute("attributeName","y");
+        animate.setAttribute("from",svgHeight);
+        animate.setAttribute("to",svgHeight-ybarData[i]);
+        animate.setAttribute("begin","0");
+        animate.setAttribute("dur","3s");
+        animate.setAttribute("repeatCount","3");
+        rect.appendChild(animate);
+    }
+}
+
+window.onload = function(){
+    xbarGraph();
+    ybarGraph();
 }
