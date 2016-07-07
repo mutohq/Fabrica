@@ -153,3 +153,12 @@ a:active  {
   top: 1em;
   right: 1em;
 }
+
+/*Svg chart styles*/
+.svg-bar-graph {
+  margin: 10px;
+}
+.bar-data-column{
+  fill: rgb(41, 182, 246);
+  padding: 5px;
+}
