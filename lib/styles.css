@@ -162,3 +162,8 @@ a:active  {
   fill: rgb(41, 182, 246);
   padding: 5px;
 }
+.lineGraph {
+  border-left : 2px solid rgb(13, 73, 125);
+  border-bottom:  2px solid rgb(13, 73, 125);
+
+}
