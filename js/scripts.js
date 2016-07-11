@@ -287,25 +287,51 @@ function lineGraph() {
                 " 100 300, 40 320, 0 340, 100 360, 100 380, 120 400, 60 420, 70 440, 80";
 
     lineGraph = document.getElementById("lineGraph");
+let svgNS = "http://www.w3.org/2000/svg";
+
+figure = document.createElement("figure");
+lineGraph.appendChild(figure);
+
+let svg = document.createElementNS(svgNS, "svg");
+svg.setAttributeNS(null,"viewBox","0 0 500 150");
+figure.appendChild(svg);
+
+let polyline = document.createElementNS(svgNS, "polyline");
+polyline.setAttributeNS(null,"fill","none");
+polyline.setAttributeNS(null,"stroke","#0074d9");
+polyline.setAttributeNS(null,"stroke-width","1");
+polyline.setAttributeNS(null,"points",points);
+
+svg.appendChild(polyline);
+}
+
+function areaGraph() {
+    let points ="0 150,00,120 20,60 40,80 60,20 80,80 100,80 120,60 140,100 " +
+                " 160,90 180,80 200, 110 220, 10 240, 70 260, 100 280, "+
+                " 100 300, 40 320, 0 340, 100 360, 100 380, 120 400, 60 420, 70 440, 500";
+
+    areaGraph = document.getElementById("areaGraph");
     let svgNS = "http://www.w3.org/2000/svg";
 
     figure = document.createElement("figure");
-    lineGraph.appendChild(figure);
+    areaGraph.appendChild(figure);
 
     let svg = document.createElementNS(svgNS, "svg");
-    svg.setAttributeNS(null,"viewBox","0 0 500 100");
+    svg.setAttributeNS(null,"viewBox","0 0 500 150");
     figure.appendChild(svg);
 
     let polyline = document.createElementNS(svgNS, "polyline");
-    polyline.setAttributeNS(null,"fill","none");
+    polyline.setAttributeNS(null,"fill","#29b6f6");
     polyline.setAttributeNS(null,"stroke","#0074d9");
-    polyline.setAttributeNS(null,"stroke-width","2");
+    polyline.setAttributeNS(null,"stroke-width","1");
     polyline.setAttributeNS(null,"points",points);
 
     svg.appendChild(polyline);
 }
+
 window.onload = function(){
     xbarGraph();
     ybarGraph();
-    // lineGraph();
+    lineGraph();
+    areaGraph();
 }
